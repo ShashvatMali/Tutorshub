@@ -1,0 +1,172 @@
+.extended-portfolio-carousel, .extended-posts-carousel {
+  position: relative;
+
+  .extended-carousel-wrap {
+	position: relative;
+	width: 100%;
+	margin-bottom: 15px;
+  }
+
+  .portfolio-set {
+	flex-wrap: nowrap !important;
+	margin-bottom: 0;
+
+	.portfolio-item {
+	  flex: none;
+	}
+  }
+
+  /*enable touch action*/
+  .owl-carousel.owl-drag .owl-item {
+	-ms-touch-action: auto;
+	touch-action: auto;
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+
+	.portfolio-item {
+	  width: 100% !important;
+	}
+  }
+
+  /*owl navigate styled*/
+  .extended-carousel-item .owl-nav {
+
+	.owl-prev, .owl-next {
+	  position: absolute;
+	  display: flex;
+	  align-items: center;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  justify-content: center;
+	  border: 0 solid;
+	  overflow: hidden;
+
+	  .disabled {
+		opacity: 0;
+	  }
+
+	  span {
+		display: none;
+	  }
+
+	  div {
+		transition: all 0.3s;
+
+		i {
+		  display: block;
+		  font-size: 24px;
+
+		  &.default {
+			font-family: 'thegem-icons';
+			font-weight: normal;
+			font-style: normal;
+		  }
+		}
+
+		&.position-on {
+		  padding: 6px;
+		}
+	  }
+	}
+
+	.owl-prev {
+	  left: 0;
+
+	  i.default:before {
+		content: '\e636';
+	  }
+	}
+
+	.owl-next {
+	  right: 0;
+
+	  i.default:before {
+		content: '\e634';
+	  }
+	}
+  }
+
+  &.arrows-position-outside:not(.prevent-arrows-outside) .extended-carousel-item .owl-nav {
+
+	.owl-prev {
+	  transform: translate(-100%, -50%);
+	}
+
+	.owl-next {
+	  transform: translate(100%, -50%);
+	}
+  }
+
+  &.arrows-position-outside.prevent-arrows-outside .extended-carousel-item .owl-nav {
+
+	.owl-prev {
+	  left: 0 !important;
+	}
+
+	.owl-next {
+	  right: 0 !important;
+	}
+  }
+
+  &.arrows-hover .extended-carousel-item {
+
+	.owl-nav {
+	  opacity: 0;
+	  transition: opacity 0.3s linear;
+	}
+
+	&:hover .owl-nav {
+	  visibility: visible;
+	  opacity: 1;
+	  transition: all 0.3s linear;
+	}
+  }
+
+  .extended-carousel-item.dots {
+
+	.owl-prev, .owl-next {
+	  top: calc(50% - 14px);
+	}
+  }
+
+  /*owl dots styled*/
+  .owl-dots {
+	display: flex;
+	flex: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 20px;
+
+	.owl-dot {
+	  margin: 0 10px;
+
+	  span {
+		display: flex;
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		border: 0 solid;
+	  }
+	}
+  }
+
+  .owl-stage {
+	display: flex;
+
+	.owl-item {
+	  flex: none;
+	  height: auto;
+
+	  .portfolio-item {
+		height: 100%;
+	  }
+	}
+  }
+
+  &.inited .portfolio-item {
+	padding: 0 !important;
+  }
+}

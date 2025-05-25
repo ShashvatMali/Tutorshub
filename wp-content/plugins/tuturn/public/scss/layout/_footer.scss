@@ -1,0 +1,100 @@
+/** ====== footer layout ====== **/
+.tu-footer {
+	padding: 80px 0;
+	overflow: hidden;
+	position: relative;
+	color: $charcoal_black;
+	z-index: 1;
+	&:before{
+		left: 0;
+		bottom: 0;
+		content: '';
+		z-index: -1;
+		width: 276px;
+		height: 353px;
+		position:absolute;
+		background-size: 100%;
+		pointer-events: none;
+	}
+	&:after{
+		top: 0;
+		right: 0;
+		z-index: -1;
+		content: '';
+		width: 253px;
+		height: 368px;
+		background-size: 100%;
+		position:absolute;
+		pointer-events: none;
+	}
+	&_maintitle {
+	    margin-bottom: 30px;
+	    img{margin-bottom: 20px;}
+		& h4 {
+			margin: 0;
+			font-weight: 400;
+			color: $font_color;
+		}
+		& h2 {
+			margin: 0;
+			font-weight: 600;
+			color: $font_color;
+		}
+	}
+	&_row {
+		row-gap: 30px;
+	}
+	.tu-footertitle{
+		font-weight: 600;
+		color: $font_color;
+		margin-bottom: 20px;
+	}
+	.tu-footerlist{
+		gap: 0;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			position: relative;
+			padding-left: 20px !important;
+			line-height: inherit;
+			list-style-type: none;
+			&:before{
+				top: 0;
+				left: 0;
+				content: "\f00c";
+				position: absolute;
+				color: rgba(0, 0, 0, 0.2);
+				font: 600 rem(12)/em(26,12) 'Font Awesome 6 Free';
+			}
+			& ~ li{margin-top: 10px;}
+			a{
+				width: 100%;
+				display: flex;
+				color: $text_dark_color;
+				font-size: rem(16);
+				align-items: center;
+				line-height: em(26,16);
+				&:hover{
+					span{color: $hyperlink;}
+				}
+				& span{
+					color: $text_dark_color;
+					margin-left: auto;
+					font-size: rem(15);
+					line-height: em(24,15);
+				}
+			}
+			&.tu-footerlist-explore{
+				padding-left: 20px !important;
+				&:before{display: none;}
+				& a {
+					@extend %p14;
+				}
+			}
+		}
+	}
+}
+.tu-footerlist li a:hover {
+    color: $hyperlink;
+}

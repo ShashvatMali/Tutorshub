@@ -1,0 +1,935 @@
+/** ====== invoices page style ====== **/
+.tu-booking-epmty-field {
+    border: 0;
+    filter: none;
+    @extend %flex;
+    padding: 30px;
+    box-shadow: none;
+    min-height: 438px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        @extend %p16;
+        margin-bottom: 0;
+        max-width: 780px;
+        color: $font_color;
+        text-align: center;
+    }
+    h4{
+        @extend %h4;
+        font-weight: 600;
+        color: $font_color;
+        margin: 0 0 0.5rem;
+    }
+}
+.tu-dbtitle {
+    @extend %flex;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px $border-color;
+    h5 {
+        margin: 0;
+        font-weight: 600;
+        color: $font_color;
+    }
+    h3 {
+        margin: 0;
+        @extend %flex;
+        color: $font_color;
+        align-items: center;
+        font: 600 rem(22)/em(30,22) $heading_font_family;
+        .tu-linknotificationvtwo {
+            margin: 0 0 0 10px;
+        }
+        .tu-linknotificationvtwo {
+            margin: 0 0 0 10px;
+        }
+    }
+    .tu-select {
+        max-width: 196px;
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            color: $charcoal_black;
+        }
+    }
+}
+table.dhb-table > tbody{
+    & tr{
+        &:nth-child(odd){
+            background: #f7f7f7;
+            border-radius: $radius;
+            & td:first-child{
+                border-radius: $radius 0 0 $radius;
+            }
+            & td:last-child{
+                border-radius: 0 $radius $radius 0;
+            }
+        }
+        & > th {
+            border: 0;
+            text-align: left;
+            padding: 0;
+            vertical-align: middle;
+            @extend %p16;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+}
+table.dhb-table > thead:first-child > tr:first-child > th {
+    border: 0;
+    @extend %p16;
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+table.dhb-table > thead tr > th:first-child {
+    padding-left: 20px;
+}
+table.dhb-table > thead > tr {
+    th:first-child {
+        padding-left: 20px !important;
+    }
+}
+.dhb-table.table > tbody > tr{
+    td {
+        border: 0;
+        @extend %p16;
+        text-align: left;
+        padding: 10px 20px;
+        line-height: inherit;
+        vertical-align: middle;
+        color: $charcoal_black;
+        a {
+            @extend %p16;
+            color: $hyperlink;
+            display: inline-block;
+        }
+        .tu-linksm {
+            @extend %flex;
+            text-align: left;
+            @extend %small_title;
+            align-items: center;
+            @extend %transition;
+            color: $charcoal_black;
+            &:hover{color: $hyperlink;}
+            i {
+                font-size: 18px;
+                vertical-align: middle;
+                display: inline-block;
+                margin: 0 0 0 5px;
+            }
+        }
+        > span:not(.tu-tagstatus) {
+            display: flex;
+            align-items: center;
+            color: $charcoal_black;
+            i {
+                display: inline-block;
+                margin: 0 14px 0 0;
+                font-size: 20px;
+                color: $light;
+            }
+        }
+        &:last-child {
+            text-align: center;
+            span {
+                margin: 1px auto 1px auto;
+                color: $charcoal_black;
+            }
+        }
+    }
+}
+table.dhb-table > :not(:first-child) {
+    border-top: 0;
+}
+.tu-taggreen {
+    border: 0;
+    color: $white !important;
+    background: $bright_green !important;
+}
+.tu-paymentdesp {
+    p {
+        margin: 0;
+        @extend %p15;
+    }
+}
+.tu-accountmethods {
+    @extend %flex;
+    padding: 0;
+    margin: 0 -15px;
+    li {
+        padding: 0 15px;
+        position: relative;
+        & + li {
+            &::after {
+                top: -1px;
+                left: -3px;
+                content: "|";
+                color: #888;
+                position: absolute;
+            }
+        }
+        a {
+            @extend %p15;
+        }
+    }
+}
+.tu-btngraysm {
+    border-color: $lighter;
+    min-width: 44px;
+    padding: 0 8px;
+    &:hover,
+    &:active,
+    &:focus {
+        background: inherit;
+        border-color: $lighter;
+    }
+    i {
+        color: $light;
+    }
+}
+.tu-incomeitem {
+    padding: 16px 20px;
+    background: $white;
+    border-radius: $radius;
+    border: 1px solid $border_color;
+    box-shadow: $drop_shadows_lightest;
+}
+.tu-incomeicon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(24, 185, 155, 0.1);
+    @extend %flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        display: inline-block;
+        color: #18b99b;
+        font-size: 20px;
+    }
+}
+.tu-incomeprice {
+    @extend %flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    > span {
+        margin: 0 10px 0 0;
+        flex: none;
+    }
+    h5 {
+        margin: 0;
+        width: 100%;
+        @extend %h5;
+        font-weight: 600;
+        color: $font_color;
+        padding-right: 10px;
+        > a {
+            float: right;
+            color: $hyperlink;
+            @extend %small_title;
+            @extend %flex;
+            align-items: center;
+            i {
+                font-size: 18px;
+                color: $hyperlink;
+                vertical-align: middle;
+                display: inline-block;
+                margin: 0 0 0 5px;
+            }
+        }
+        span {
+            display: inline-block;
+            @extend %p15;
+            color: $light;
+            margin: 0 0 0 10px;
+        }
+    }
+    a {
+        flex: none;
+        float: right;
+        @extend %flex;
+        font-weight: 500;
+        color: $hyperlink;
+        align-items: center;
+        @extend %small_title;
+        &:focus,
+        &:hover{
+            color: $hyperlink;
+        }
+        i {
+            font-size: 18px;
+            color: $hyperlink;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 0 0 5px;
+        }
+    }
+}
+.tu-colorlight {
+    color: $light !important;
+    i {
+        color: inherit !important;
+    }
+}
+.tu-bgpurp {
+    background: rgba(115, 87, 251, 0.1);
+}
+.tu-colorpurp {
+    color: #7357fb !important;
+}
+.tu-bgblue {
+    background: rgba(48, 156, 255, 0.1);
+}
+.tu-colorblue {
+    color: #309cff !important;
+}
+.tu-bgred {
+    background: rgba(255, 97, 103, 0.1);
+}
+.tu-colorredvtwo {
+    color: #ff6167 !important;
+}
+.tu-incomedetails {
+    @extend %flex;
+    padding: 0;
+    list-style: none;
+    margin: -5px -5px 40px;
+    li {
+        padding: 5px;
+        width: 50%;
+        list-style-type: none;
+    }
+}
+.tu-dbwrapper ~ .tu-dbwrapper {
+    margin: 40px 0 0;
+}
+.tu-dbwrapper {
+    & ~ .tu-pagination {
+        margin: 30px 0 0;
+    }
+    .tu-invoicedetail {
+        margin: 30px 0 0;
+    }
+}
+.tu-invoicestable{
+    padding: 29px;
+    .dhb-table{margin: 0;}
+    .dhb-table.table > tbody > tr td:last-child{text-align: left;}
+}
+.tu-payoutmethods {
+    padding: 30px;
+    .tu-payoutmethods__item {
+        p {
+            @extend %p16;
+            margin: 0;
+            color: $light;
+            a{
+                color: $hyperlink;
+            }
+        }
+        & ~ .tu-payoutmethods__item {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $border_color;
+        }
+    }
+}
+.tu-payinfo {
+    .tu-check {
+        img {
+            max-width: 30px;
+            width: 100%;
+            margin: 0 10px 0 0;
+        }
+        label {
+            &:before {
+                flex: none;
+                width: 20px;
+                height: 20px;
+            }
+            span {
+                @extend %p16;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.tu-methodwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        display: inline-flex;
+        align-items: center;
+        color: $light;
+        @extend %small_title;
+        font-weight: 600;
+        &:focus,
+        &:hover{
+            color: $hyperlink;
+        }
+        i {
+            font-size: 20px;
+            margin: 0 0 0 6px;
+            display: inline-block;
+            &.icon-plus:before{
+                content: "\e9c0" !important;
+            }
+        }
+    }
+}
+.tu-selectwrapper {
+    @extend %flex;
+    align-items: center;
+    > span {
+        flex: none;
+        @extend %h6;
+        font-weight: 600;
+        color: $font_color;
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+}
+.tu-tagstatus {
+    @extend %small_title;
+    background: $white;
+    border: 1.5px solid $lighter;
+    border-radius: 15px;
+    @extend %flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding: 0.5px 10.5px;
+}
+.tu-barchart {
+    padding: 30px;
+    canvas{width: 100%;}
+}
+.tu-paymentdesp {
+    p {
+        margin: 0;
+        @extend %p15;
+        color: $font_color;
+    }
+}
+.tu-accountmethods {
+    padding: 0;
+    @extend %flex;
+    margin: 0 -15px;
+    list-style: none;
+    li {
+        padding: 0 15px;
+        position: relative;
+        list-style-type: none;
+
+        & + li {
+            &::after {
+                position: absolute;
+                left: -3px;
+                content: "|";
+                color: #888;
+                top: -1px;
+            }
+        }
+        a {
+            @extend %p15;
+        }
+    }
+}
+.tu-btngraysm {
+    border-color: $lighter;
+    min-width: 44px;
+    padding: 0 8px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: inherit;
+        border-color: $lighter;
+    }
+    i {
+        color: $light;
+    }
+}
+.tu-invoivebtns {
+    display: inline-flex;
+    a {
+        font-size: 16px;
+        span{line-height: 48px;}
+        & + a {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+.tu-boxlg {
+    padding: 40px;
+    background: $white;
+    width: 100%;
+    float: left;
+    .tu-invoiceamount {
+        width: 50%;
+        float: left;
+        text-align: right;
+    }
+}
+.tu-incoiveinfo {
+    width: 100%;
+    display: flex;
+    h4 {
+        @extend %h4;
+        font-weight: 600;
+        margin: 0 0 16px;
+        color: $font_color;
+    }
+}
+.tu-boxdark {
+    background: $dark;
+    .tu-incoiveinfo {
+        h4 {
+            color: $white;
+        }
+    }
+}
+.tu-invoicedetail {
+    background: $white;
+    border-radius: $radius;
+    box-shadow: $drop_shadows_lightest;
+    border: 1px solid $border_color;
+    width: 100%;
+    float: left;
+    .tu-boxdark {
+        border-radius: $radius $radius 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tu-boxlg:not(.tu-boxdark){
+        background:transparent;
+    }
+}
+.tu-userinvoice {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 auto;
+    li {
+        color: $white;
+        @extend %p16;
+        @extend %flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        i {
+            display: inline-block;
+            font-size: 20px;
+            color: inherit;
+            margin: 0 0 0 14px;
+        }
+        & + li {
+            margin: 10px 0 0;
+        }
+    }
+}
+.tu-billinfo {
+    width: 50%;
+    padding: 0;
+    float: left;
+    margin: 0;
+    list-style: none;
+    li {
+        width: 50%;
+        float: left;
+        padding: 0 10px 0 0;
+        list-style-type: none;
+
+        h6 {
+            margin: 0;
+            @extend %p14;
+            font-weight: 600;
+            color: $font_color;
+        }
+        h5 {
+            @extend %p16;
+            margin: 0;
+        }
+        & + li:nth-child(n + 3) {
+            width: 100%;
+            margin: 10px 0 0;
+        }
+    }
+}
+.tu-invoiceamount {
+    h6 {
+        @extend %h6;
+        font-weight: 600;
+        margin: 0;
+        color: $light;
+    }
+    h3 {
+        margin: 0;
+        font-weight: 600;
+        color: $font_color;
+    }
+}
+.tu-billadd {
+    box-shadow: inset 0px -1px 0px #eeeeee;
+}
+table.tu-tableinvoice {
+    margin: 0;
+    thead {
+        tr {
+            th {
+                text-align: left;
+                border: 0 !important;
+                background: $lightest;
+                @extend %p16;
+                font-weight: 600;
+                padding: 16px 30px;
+                border-radius: $radius;
+
+            }
+        }
+    }
+    tbody {
+        border: 0 !important;
+        tr {
+            box-shadow: inset 0px -1px 0px #eeeeee;
+            td {
+                color: $charcoal_black;
+                border: 0;
+                text-align: left;
+                padding: 16px 30px;
+                @extend %h6;
+                font-weight: 400;
+            }
+            &:last-child {
+                box-shadow: none;
+            }
+        }
+    }
+}
+.tu-tableinvoice > :not(caption) > * > * {
+    border: 0;
+}
+.tu-subtotal {
+    font-weight: 600 !important;
+}
+.tu-tabledescription {
+    background: $lightest;
+    border-radius: 10px;
+    padding: 20px;
+    h5 {
+        font-weight: 600;
+        margin: 0;
+    }
+    p {
+        margin: 6px 0 0;
+        @extend %p14;
+    }
+}
+.tu-descpbox {
+    padding: 0 30px 30px;
+    width: 100%;
+    float: left;
+}
+.tu-dbitemmainwrap {
+    border-radius: 10px;
+    background: $white;
+    border: 1px solid $border_color;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 9px;
+        height: 4px;
+        background: $white;
+        width: calc(100% - 17px);
+        border-radius: 3px 3px 0px 0px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        height: 4px;
+        background: $white;
+        width: calc(100% - 37px);
+        border-radius: 3px 3px 0px 0px;
+    }
+}
+
+.tu-dbitemmain {
+    padding: 43px 30px;
+
+    .tu-iteminfo {
+        margin: 0 0 30px;
+    }
+    .tu-planperks {
+        li {
+            span {
+                @extend %p16;
+            }
+        }
+    }
+}
+.tu-dbitemmainvtwo {
+    padding: 30px;
+}
+.tu-incomeiconlg {
+    height: 84px;
+    width: 84px;
+    i {
+        font-size: 30px;
+    }
+}
+.tu-iteminfo {
+    @extend %flex;
+    justify-content: space-between;
+    a {
+        display: inline-block;
+        align-self: flex-start;
+        color: $light;
+    }
+    h5 {
+        font-weight: 600;
+        margin: 0;
+    }
+}
+.tu-dbitemdetail {
+    h2 {
+        font-weight: 600;
+        margin: 0;
+    }
+    h4 {
+        font-weight: 600;
+        margin: 0;
+        > span {
+            @extend %h6;
+            font-weight: 600;
+            color: $light;
+        }
+    }
+    p {
+        @extend %p16;
+        margin: 30px 0 0;
+    }
+}
+.tu-dbitemlink {
+    box-shadow: inset 0px 1px 0px #eeeeee;
+    border-radius: 0px 0px 10px 10px;
+    background: $white;
+    padding: 11px;
+    text-align: center;
+    a {
+        display: inline-block;
+        @extend %h6;
+        font-weight: 600;
+        color: $charcoal_black;
+    }
+}
+.tu-iteminfovtwo {
+    align-items: center;
+    justify-content: flex-start;
+    span {
+        margin: 0 16px 0 0;
+    }
+}
+.tu-boxsm {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: $drop_shadows_lightest;
+    border: 1px solid $border_color;
+    > span {
+        margin: 0 20px 0 0;
+        flex: none;
+    }
+    h5 {
+        font-weight: 600;
+        margin: 0;
+        width: 100%;
+
+        > a {
+            float: right;
+            color: $hyperlink;
+            @extend %small_title;
+            @extend %flex;
+            align-items: center;
+            i {
+                font-size: 18px;
+                color: $hyperlink;
+                vertical-align: middle;
+                display: inline-block;
+                margin: 0 0 0 5px;
+            }
+        }
+        span {
+            display: inline-block;
+            @extend %p15;
+            margin: 0 0 0 10px;
+            color: $light;
+        }
+    }
+}
+.tu-dbitemempty {
+    .tu-dbitemmain {
+        padding: 43px 30px 49px 30px;
+    }
+    .tu-iteminfo {
+        margin: 0 0 20px;
+    }
+    .tu-dbitemdetail {
+        p {
+            margin: 20px 0 0;
+        }
+    }
+}
+.tu-checkvtwo {
+    label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        a {
+            margin: 0 0 0 6px;
+        }
+    }
+}
+.tu-dhbform {
+    .tu-btnarearight {
+        justify-content: space-between;
+        .tu-check {
+            padding: 0;
+        }
+    }
+}
+.tu-showmodal {
+    padding: 0 20px;
+}
+.tu-form-group {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    .tu-btnlist {
+        .tu-btn {
+            height: 40px;
+        }
+    }
+    .tu-popupbtnarea {
+        padding-top: 10px;
+    }
+    &:first-child {
+        .tu-form__section {
+            margin-top: -5px;
+            padding: 0;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.tu-withdrawform {
+    .tu-maxlimit{
+        margin: 10px 0 0;
+        font-size: rem(13);
+        line-height: em(18,13);
+    }
+    .form-grouppayments {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        > .tu-label {
+            margin: 0 20px 0 0;
+            flex: none;
+        }
+    }
+    .tu-popupbtnarea{
+        flex-wrap: nowrap;
+        & > .tu-check{
+            padding-right: 20px;
+            & label span{font-weight: 400;}
+        }
+        & > button{flex: none;}
+    }
+}
+.tu-payoutmode {
+    img {
+        & ~ span {
+            margin: 0 0 0 10px;
+            display: inline-block;
+        }
+    }
+}
+.tu-payoutmethod {
+    width: 100%;
+    margin: 0;
+    li {
+        list-style: none;
+        width: 100%;
+        & + li {
+            margin: 20px 0 0;
+        }
+    }
+    .tu-check label span img{
+        max-width: 30px;
+    }
+}
+.tu-maxlimit {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 100%;
+    flex-direction: column;
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: $red;
+}
+.tu-radioholder {
+    position: relative;
+    border: 1px solid $lighter;
+    background-color: $lightest;
+    padding: 20px;
+    width: 100%;
+    border-radius: $radius;
+}
+.tu-popupbtnarea {
+    justify-content: space-between;
+}
+
+.tu-accountmethods{
+    @extend %flex;
+    padding: 0;
+    margin: 0 -15px;
+        li{
+            padding: 0 15px;
+            position: relative;
+
+        & + li {
+            &::after{
+                position: absolute;
+                left: -3px;
+                content: "|";
+                color: #888;
+                top: -1px;
+            }
+        }
+        a{
+            @extend %p15;
+            color: $hyperlink;
+        }
+    }
+}
+.tu-timeslotform{
+      padding: 30px;
+}
+.tu-instructor-invoice-detail{
+    & > .tu-dbwrapper > .tu-dbtitle{
+        box-shadow: none;
+    }
+}

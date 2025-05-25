@@ -1,0 +1,878 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tuturn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-22 10:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: tuturn"
+
+#: comments.php:19 single.php:59 template-parts/content-archive.php:30
+#: template-parts/content-related-articles.php:48
+#: template-parts/content-search.php:20
+msgid "% Comments"
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:3647
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:3655
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/template-functions.php:158
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: comments.php:24
+msgid "&larr; Older comments"
+msgstr ""
+
+#: comments.php:19 single.php:59 template-parts/content-archive.php:30
+#: template-parts/content-related-articles.php:48
+#: template-parts/content-search.php:20
+msgid "0 Comments"
+msgstr ""
+
+#: comments.php:19 single.php:59 template-parts/content-archive.php:30
+#: template-parts/content-related-articles.php:48
+#: template-parts/content-search.php:20
+msgid "1 Comment"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2859
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/tgmp/class-tgm-plugin-activation.php:2745
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2453
+msgid "Active"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3648
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3656
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: dashboard link.
+#: inc/tgmp/class-tgm-plugin-activation.php:406
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmp/init.php:116
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#. Author of the theme
+msgid "Amentotech Private Limited"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: inc/tgmp/class-tgm-plugin-activation.php:3639
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2614
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: single.php:85
+msgid "Author"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2642
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:392 inc/tgmp/init.php:113
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:382 inc/tgmp/init.php:112
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:387
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:71
+msgid "Cancel reply"
+msgstr ""
+
+#: inc/template-tags.php:37
+msgid "Categories"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:106
+msgid "Categories:"
+msgstr ""
+
+#: comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/tgmp/init.php:63
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/theme-footer.php:11
+msgid "Copyright &copy;"
+msgstr ""
+
+#: functions.php:197
+msgid "Default archive sidebar"
+msgstr ""
+
+#: functions.php:195
+msgid "Default sidebar"
+msgstr ""
+
+#: comments.php:55
+msgid "Description"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:407
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmp/init.php:53
+msgid "Elementor"
+msgstr ""
+
+#: comments.php:52
+msgid "Email address"
+msgstr ""
+
+#: template-parts/content-related-articles.php:20
+msgid "Explore related articles"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2427
+msgid "External Source"
+msgstr ""
+
+#: functions.php:118
+msgid "Extra Large"
+msgstr ""
+
+#: functions.php:56
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:217
+msgid "Footer sidebar 1"
+msgstr ""
+
+#: functions.php:228
+msgid "Footer sidebar 2"
+msgstr ""
+
+#: functions.php:239
+msgid "Footer sidebar 3"
+msgstr ""
+
+#: functions.php:251
+msgid "Footer sidebar 4"
+msgstr ""
+
+#: functions.php:262
+msgid "Footer sidebar 5"
+msgstr ""
+
+#: functions.php:273
+msgid "Footer sidebar 6"
+msgstr ""
+
+#: functions.php:275
+msgid "For 3rd section 3rd column"
+msgstr ""
+
+#: functions.php:230
+msgid "For footer 2nd section"
+msgstr ""
+
+#: functions.php:241
+msgid "For footer 2nd section second column"
+msgstr ""
+
+#: functions.php:253
+msgid "For footer 3rd section first column"
+msgstr ""
+
+#: functions.php:264
+msgid "For footer 3rd section second column"
+msgstr ""
+
+#: functions.php:219
+msgid "For footer first section"
+msgstr ""
+
+#: comments.php:51
+msgid "Full Name"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3663
+msgid "Hide Details"
+msgstr ""
+
+#. URI of the theme
+msgid "https://amentotech.com/projects/tuturn"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/amentotech/portfolio"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2850
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/tgmp/class-tgm-plugin-activation.php:2734
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:340 inc/tgmp/init.php:101
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:339 inc/tgmp/init.php:100
+msgid "Install Required Plugins"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: inc/tgmp/class-tgm-plugin-activation.php:2474
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2451
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2622
+msgid "Installed version:"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmp/class-tgm-plugin-activation.php:3650
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmp/class-tgm-plugin-activation.php:3658
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:342 inc/tgmp/init.php:102
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: 404.php:13
+msgid ""
+"It looks like nothing was found on this path. Maybe you should try with "
+"another link or make a quick new keyword search below?"
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: functions.php:113
+msgid "Large"
+msgstr ""
+
+#: comments.php:66
+#, php-format
+msgid "Leave a reply to %s"
+msgstr ""
+
+#: comments.php:65
+msgid "Leave your comment"
+msgstr ""
+
+#: inc/template-tags.php:109
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/theme-header.php:34 inc/theme-header.php:44
+msgid "Loading..."
+msgstr ""
+
+#: comments.php:49
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:49
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:49
+msgid "Logged in as"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2630
+msgid "Minimum required version:"
+msgstr ""
+
+#: comments.php:25
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:402
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3068
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2933
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2935
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2665
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3042
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2890
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2892
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: functions.php:108
+msgid "Normal"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2447
+msgid "Not Installed"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-archive.php:46 template-parts/content-page.php:24
+#: template-parts/content-post.php:17 template-parts/content.php:37
+msgid "Pages:"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:32
+msgid "Payment required"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:409
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:1035
+#: inc/tgmp/class-tgm-plugin-activation.php:1045
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2678
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:1234
+#: inc/tgmp/class-tgm-plugin-activation.php:3082
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:399
+#: inc/tgmp/class-tgm-plugin-activation.php:3293 inc/tgmp/init.php:115
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3292
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:404
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: number of plugins.
+#: inc/tgmp/class-tgm-plugin-activation.php:2520
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post author.
+#: inc/template-tags.php:81
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: comments.php:72 comments.php:73
+msgid "Post comment"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:65
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2430
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary menu"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2408
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmp/init.php:58
+msgid "Redux"
+msgstr ""
+
+#: inc/template-functions.php:111
+msgid "Reply"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2405
+msgid "Required"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2459
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2462
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:397 inc/tgmp/init.php:114
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:398
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: searchform.php:17
+msgid "Search now"
+msgstr ""
+
+#: search.php:24
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:16
+msgid "Search with keyword"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:729
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3663
+msgid "Show Details"
+msgstr ""
+
+#: functions.php:206 functions.php:208
+msgid "Single post sidebar"
+msgstr ""
+
+#: functions.php:103
+msgid "Small"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:345 inc/tgmp/init.php:103
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:36
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/tgmp/init.php:109
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin."
+" Contact the administrator of this site for help on getting the plugin "
+"activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/init.php:106
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins."
+" Contact the administrator of this site for help on getting the plugins "
+"installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/init.php:111
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2679
+msgid "Source"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2685
+msgid "Status"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:47
+msgid "Summary"
+msgstr ""
+
+#: inc/template-tags.php:17
+msgid "Tags"
+msgstr ""
+
+#. %s: version number
+#: inc/tgmp/class-tgm-plugin-activation.php:2103
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:359 inc/tgmp/init.php:110
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:400
+#: inc/tgmp/class-tgm-plugin-activation.php:3086
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:377 inc/tgmp/init.php:108
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:371 inc/tgmp/init.php:107
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3645
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:3641
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:3653
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:1045
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:1035
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: functions.php:129
+msgid "Theme color"
+msgstr ""
+
+#: functions.php:144
+msgid "Theme Dark text color"
+msgstr ""
+
+#: functions.php:134
+msgid "Theme light text color"
+msgstr ""
+
+#: functions.php:139
+msgid "Theme very light text color"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:408
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:365
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:615
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:353 inc/tgmp/init.php:105
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: plugin name(s).
+#: inc/tgmp/class-tgm-plugin-activation.php:347 inc/tgmp/init.php:104
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: inc/tgmp/class-tgm-plugin-activation.php:2532
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: inc/tgmp/class-tgm-plugin-activation.php:2524
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the theme
+#: inc/tgmp/init.php:74
+msgid "Tuturn"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Tuturn is tutors Marketplace WordPress theme. It has been designed after "
+"thorough research to cater to the requirements of people interested in "
+"building online tutions centers and tutors marketplace. Students can find "
+"available online tutors and unlock any tutor profile to get online tuition."
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2680
+msgid "Type"
+msgstr ""
+
+#: comments.php:55
+msgid "Type your comment"
+msgstr ""
+
+#: 404.php:12
+msgid "Uhoo! Page not found"
+msgstr ""
+
+#: inc/tgmp/init.php:68
+msgid "Unyson"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2856
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/tgmp/class-tgm-plugin-activation.php:2739
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: inc/tgmp/class-tgm-plugin-activation.php:2528
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2465
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:616
+msgid "Update Required"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmp/class-tgm-plugin-activation.php:3636
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/tgmp/class-tgm-plugin-activation.php:344
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2817
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2684
+msgid "Version"
+msgstr ""
+
+#: comments.php:53
+msgid "Website"
+msgstr ""
+
+#: inc/tgmp/init.php:48
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/tgmp/class-tgm-plugin-activation.php:2424
+msgid "WordPress Repository"
+msgstr ""
+
+#: 404.php:29 template-parts/content-none.php:39
+#, php-format
+msgid "You can also start from scratch. Goto %sHomepage%s instead"
+msgstr ""
+
+#: comments.php:48
+#, php-format
+msgid "You must be %slogged in%s to post a comment."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: 404.php:11
+msgid "You running into nowhere"
+msgstr ""
+
+#: inc/template-functions.php:170
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:52
+msgid "Your email (required)"
+msgstr ""
+
+#: comments.php:51
+msgid "Your name (required)"
+msgstr ""

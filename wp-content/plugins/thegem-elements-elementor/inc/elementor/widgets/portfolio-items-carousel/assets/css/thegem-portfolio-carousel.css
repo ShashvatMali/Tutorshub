@@ -1,0 +1,129 @@
+.extended-portfolio-carousel, .extended-posts-carousel {
+  position: relative;
+  /*enable touch action*/
+  /*owl navigate styled*/
+  /*owl dots styled*/
+}
+.extended-portfolio-carousel .extended-carousel-wrap, .extended-posts-carousel .extended-carousel-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.extended-portfolio-carousel .portfolio-set, .extended-posts-carousel .portfolio-set {
+  flex-wrap: nowrap !important;
+  margin-bottom: 0;
+}
+.extended-portfolio-carousel .portfolio-set .portfolio-item, .extended-posts-carousel .portfolio-set .portfolio-item {
+  flex: none;
+}
+.extended-portfolio-carousel .owl-carousel.owl-drag .owl-item, .extended-posts-carousel .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+.extended-portfolio-carousel .owl-carousel.owl-drag .owl-item .portfolio-item, .extended-posts-carousel .owl-carousel.owl-drag .owl-item .portfolio-item {
+  width: 100% !important;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  border: 0 solid;
+  overflow: hidden;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev .disabled, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next .disabled, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev .disabled, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next .disabled {
+  opacity: 0;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev span, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next span, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev span, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next span {
+  display: none;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev div, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next div, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev div, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next div {
+  transition: all 0.3s;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev div i, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next div i, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev div i, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next div i {
+  display: block;
+  font-size: 24px;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev div i.default, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next div i.default, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev div i.default, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next div i.default {
+  font-family: "thegem-icons";
+  font-weight: normal;
+  font-style: normal;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev div.position-on, .extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next div.position-on, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev div.position-on, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next div.position-on {
+  padding: 6px;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev {
+  left: 0;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-prev i.default:before, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-prev i.default:before {
+  content: "\e636";
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next {
+  right: 0;
+}
+.extended-portfolio-carousel .extended-carousel-item .owl-nav .owl-next i.default:before, .extended-posts-carousel .extended-carousel-item .owl-nav .owl-next i.default:before {
+  content: "\e634";
+}
+.extended-portfolio-carousel.arrows-position-outside:not(.prevent-arrows-outside) .extended-carousel-item .owl-nav .owl-prev, .extended-posts-carousel.arrows-position-outside:not(.prevent-arrows-outside) .extended-carousel-item .owl-nav .owl-prev {
+  transform: translate(-100%, -50%);
+}
+.extended-portfolio-carousel.arrows-position-outside:not(.prevent-arrows-outside) .extended-carousel-item .owl-nav .owl-next, .extended-posts-carousel.arrows-position-outside:not(.prevent-arrows-outside) .extended-carousel-item .owl-nav .owl-next {
+  transform: translate(100%, -50%);
+}
+.extended-portfolio-carousel.arrows-position-outside.prevent-arrows-outside .extended-carousel-item .owl-nav .owl-prev, .extended-posts-carousel.arrows-position-outside.prevent-arrows-outside .extended-carousel-item .owl-nav .owl-prev {
+  left: 0 !important;
+}
+.extended-portfolio-carousel.arrows-position-outside.prevent-arrows-outside .extended-carousel-item .owl-nav .owl-next, .extended-posts-carousel.arrows-position-outside.prevent-arrows-outside .extended-carousel-item .owl-nav .owl-next {
+  right: 0 !important;
+}
+.extended-portfolio-carousel.arrows-hover .extended-carousel-item .owl-nav, .extended-posts-carousel.arrows-hover .extended-carousel-item .owl-nav {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.extended-portfolio-carousel.arrows-hover .extended-carousel-item:hover .owl-nav, .extended-posts-carousel.arrows-hover .extended-carousel-item:hover .owl-nav {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+.extended-portfolio-carousel .extended-carousel-item.dots .owl-prev, .extended-portfolio-carousel .extended-carousel-item.dots .owl-next, .extended-posts-carousel .extended-carousel-item.dots .owl-prev, .extended-posts-carousel .extended-carousel-item.dots .owl-next {
+  top: calc(50% - 14px);
+}
+.extended-portfolio-carousel .owl-dots, .extended-posts-carousel .owl-dots {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.extended-portfolio-carousel .owl-dots .owl-dot, .extended-posts-carousel .owl-dots .owl-dot {
+  margin: 0 10px;
+}
+.extended-portfolio-carousel .owl-dots .owl-dot span, .extended-posts-carousel .owl-dots .owl-dot span {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border: 0 solid;
+}
+.extended-portfolio-carousel .owl-stage, .extended-posts-carousel .owl-stage {
+  display: flex;
+}
+.extended-portfolio-carousel .owl-stage .owl-item, .extended-posts-carousel .owl-stage .owl-item {
+  flex: none;
+  height: auto;
+}
+.extended-portfolio-carousel .owl-stage .owl-item .portfolio-item, .extended-posts-carousel .owl-stage .owl-item .portfolio-item {
+  height: 100%;
+}
+.extended-portfolio-carousel.inited .portfolio-item, .extended-posts-carousel.inited .portfolio-item {
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=thegem-portfolio-carousel.css.map */

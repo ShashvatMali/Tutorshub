@@ -1,0 +1,58 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+a.woow_whatsapp_button img{width: 200px; cursor: pointer;}
+
+a#order_on_whatsapp_shop img{width: 150px;}
+
+a#order_on_whatsapp_cart img{float: right;}
+
+.loader {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 7%;
+  /*background: rgba( 255, 255, 255, .8) url('http://sampsonresume.com/labs/pIkfp.gif') 50% 50% no-repeat;*/
+  background: rgba( 0, 0, 0, .5);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  width: 48px;
+  height: 48px;
+}
+
+.loader p {
+  display: none;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

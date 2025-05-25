@@ -1,0 +1,384 @@
+/** ====== package page style ====== **/
+.tu-pricingtop{
+    text-align: center;
+    max-width: 856px;
+    margin: 0 auto;
+    h4{
+        margin:  0;
+        font-weight: 400;
+        color: $font_color;
+    }
+    h2{
+        font-weight: 600;
+        margin:  0 0 20px;
+        color: $font_color;
+    }
+    p{
+        margin:0;
+        @extend %p16;
+        color: $font_color;
+    }
+}
+.tu-pricinglist{
+    padding: 0;
+    gap: 10px;
+    @extend %flex;
+    list-style: none;
+    margin: 40px 0 0;
+    flex-wrap: nowrap;
+    > li{
+        list-style-type: none;
+        flex:max(316px, 100%/5);
+    }
+}
+.tu-plandetail{
+    h4{
+        color: $font_color;
+        @extend %h4;
+        font-weight: 600;
+        margin: 0
+    }
+    .woocommerce-Price-currencySymbol,
+    .woocommerce-Price-amount.amount{
+        margin-left: 0 !important;
+    }
+    bdi .woocommerce-Price-currencySymbol,
+    bdi{
+        @extend %h3;
+        margin: 0;
+        display: flex;
+        color: $orange;
+        align-items: center;
+        font-weight: 600;
+    }
+    h3{
+        @extend %h3;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: $orange;
+        del{
+            bdi{
+                font-weight: 700;
+                font-size: rem(14);
+                span{
+                    font-size: rem(14) !important;
+                }
+            }
+            & + ins{
+                margin-left: 10px;
+            }
+        }
+        span{
+            margin-left: 10px;
+            @extend %p15;
+            color: $font-color;
+        }
+    }
+    span{
+        @extend %p15;
+        color: $font_color;
+    }
+    p{
+        color: $font_color;
+        margin: 20px 0;
+        @extend %p15;
+    }
+}
+.tu-planlist{
+    padding:  19px;
+    background: $white;
+    @extend %transition;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    box-shadow: $drop_shadows_lightest;
+    .tu-btnarea{
+        margin: 20px 0 0 ;
+        a{
+            width: 100%;
+            line-height: 36px;
+        }
+    }
+    &:hover{
+        box-shadow: $drop_shadows_medium;
+    }
+}
+.tu-planperks{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        line-height: inherit;
+        span{
+            @extend %flex;
+            @extend %p16;
+            color: $font_color;
+            align-items: center;
+            justify-content: space-between;
+            i{
+                font-size: 16px;
+            }
+            em{
+                @extend %p16;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+        & + li {
+            margin-top: 10px;
+        }
+    }
+}
+.tu-colorgreen{
+    color: $bright_green !important;
+}
+.tu-popularplan{
+    border: 1px solid $dark;
+    border-radius: 10px;
+    transform: translate(0, -44px);
+    .tu-planlist{
+        border-radius: 0 0 10px 10px;
+        border: 0;
+    }
+}
+.tu-popularplantop{
+    background: $dark;
+    padding: 7px 0;
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    h6{
+        @extend %h6;
+        color: $white;
+        margin: 0;
+        i{
+            display: inline-block;
+            font-size: 20px;
+            margin:  0 10px 0 0 ;
+        }
+    }
+}
+.tu-btnorange {
+    background-color: #F97316 !important;
+}
+.tu-btnplain{
+    border: 2px solid $border-color ;
+    background: transparent ;
+    color: $font-color;
+    &:hover , &:focus{
+        background: #F97316;
+        color: $white;
+        border-color: transparent;
+        &::before{opacity: 0;}
+    }
+}
+.tu-package-plan{
+    padding: 30px;
+    background: $white;
+    border-radius: $radius;
+    border: 1px solid #eee;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+    margin: 40px 0 0;
+    & + .tb-pricing{
+        margin-top: 30px;
+    }
+    .tu-description p{
+        margin: 0;
+        color: $font_color;
+    }
+}
+.tu-package-heading{
+    display: flex;
+    align-items: center;  
+    figure{
+        margin-bottom: 0;
+        img{
+            border-radius:50%;
+            max-width: 60px;
+            max-height: 60px;
+        }
+    }
+    & > .tu-package-tags{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        & > span{border-radius: $radius;}
+    }
+}
+.tu-btn-area{
+    margin-left: auto;
+}
+.tu-Renew-btn{
+    color: $white;
+    padding: 7px 24px;
+    background: $bright-green;
+    @extend %h6;
+    display: block;
+    min-height: 40px;
+    &:hover{
+        color: $white;
+    }
+}
+.tu-package-tags{
+    padding-left: 0;
+    h4{
+        padding-top: 6px;
+        margin-bottom: 0;
+        @extend %h4;
+        font-weight: 600;
+        color: $font_color;
+    }
+}
+.tu-onging{
+    padding: 0 10px;
+    font-weight: 700;
+    color: $font_color;
+    background: #FDD943;
+    display: inline-block;
+    @extend %smallest_title;
+}
+.tu-expire{
+    background-color: $red;
+    color: $white;
+}
+.tb-priceplantitle{
+    margin: 0 0 30px;
+    .tb-description p{padding: 0;}
+    .tb-sectiontitle{
+        h2{
+            margin: 0 0 20px;
+        }
+    }
+}
+.tb-pricingholder .tb-priceplantitle.tb-sectioninfov2 .tb-description{
+    padding: 0;
+}
+.tu-description{
+    padding:10px 0 0 0;
+    p{
+        margin: 0 0 0;
+        @extend %p15;
+    }
+}
+.tu-package-list{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -13px -10px;
+    padding-top: 30px;
+    li{
+        list-style-type: none;
+        width: 25%;
+        padding: 13px 10px; 
+        h6{
+            @extend %h6;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: $font_color;
+        }
+        em{
+            padding-left: 3px;
+            color: $light;
+            @extend %p15;
+        }
+        span{
+            @extend %p15;
+            display: block;
+            color: $font_color;
+        }
+    }
+}
+.tu-package-list_title{
+    em{
+        padding-left: 1px;
+        color: $light;
+        @extend %p15;
+    }
+}
+.jconfirm-box-container{padding: 12px}
+.jconfirm-box{
+  width: 100% !important;
+  max-width: 600px;
+}
+.jconfirm-title-c{
+    padding-bottom: 0px !important;
+}
+.jconfirm.jconfirm-modern .jconfirm-box div.jconfirm-closeIcon{
+    opacity: 1;
+    font-size: 30px !important;
+}
+.jconfirm-icon-c{
+    font-size: 40px !important;
+    margin: 0 0 20px !important;
+    .icon-check,
+    .icon-x,
+    .icon-trash,
+    .icon-trash{
+        width: 80px;
+        height: 80px;
+        background: #FF61671A;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 10px !important;
+        color: #FF6167;
+    }
+    .icon-check{
+        color: #2ecc71;
+        background: #2ecc712a;
+    }
+}
+.jconfirm-buttons{
+    .btn{
+        height: 48px;
+        box-shadow: none;
+        position: relative;
+        outline: none !important;
+        margin: 20px 20px 0 0 !important;
+    }
+    .tb-btn::before{
+        top: 0;
+        left: 0;
+    }
+}
+.jconfirm-content-pane{
+    margin-bottom: 0 !important;
+}
+.jconfirm.jconfirm-modern .jconfirm-box div.jconfirm-content{
+    margin-bottom: 0;
+}
+.form-loader{
+    position: absolute;
+    right: 30px;
+    background: $white;
+    color: $light;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.tb-serviceformwrap{
+    .tb-pricingtitle{
+        .error{
+            color: $red;
+            font-size: rem(12);
+            font-weight: 400;
+        }
+        .form-control.error{
+            border-color:$red ;
+        }
+    }
+}
+.cr-slider-wrap{
+    input{
+        border-color: #eee;
+        box-shadow: none;
+    }
+}

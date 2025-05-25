@@ -1,0 +1,165 @@
+.thegem-te-countdown .countdown-item {
+	display: block;
+	float: left;
+	margin: 0;
+}
+
+.thegem-te-countdown .wrap {
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	padding: 0 14px;
+}
+
+.thegem-te-countdown .countdown-item:first-child .wrap {
+	padding-left: 0;
+}
+
+.thegem-te-countdown .countdown-item:last-child .wrap {
+	padding-right: 0;
+}
+
+.thegem-te-countdown .wrap,
+.thegem-te-countdown .item-title,
+.thegem-te-countdown .item-count {
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+
+.thegem-te-countdown .countdown-item:not(:last-child) .wrap {
+	border-right: 1px solid var(--thegem-to-box-border-color, #dfe5e8);
+}
+
+.thegem-te-countdown .item-count {
+	color: var(--thegem-to-h6-color, #3c3950);
+	margin: 0 5px 0 0;
+}
+
+.thegem-te-countdown .item-title {
+	color: var(--thegem-to-date-filter-subtitle-color, #99a9b5);
+	font-family: var(--thegem-to-body-tiny-font-family);
+	font-style: var(--thegem-to-body-tiny-font-style);
+	font-weight: var(--thegem-to-body-tiny-font-weight);
+	font-size: var(--thegem-to-body-tiny-font-size);
+	line-height: var(--thegem-to-body-tiny-line-height);
+	letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+	text-transform: var(--thegem-to-body-tiny-text-transform);
+}
+
+/* Display first numbers */
+.thegem-te-countdown .countdown-hours .odometer-inside .odometer-digit:first-child,
+.thegem-te-countdown .countdown-minutes .odometer-inside .odometer-digit:first-child,
+.thegem-te-countdown .countdown-seconds .odometer-inside .odometer-digit:first-child {
+	display: none;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+	display: inline-block;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+	display: block;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+	display: block;
+	-webkit-backface-visibility: hidden;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+	display: block;
+	-webkit-transform: translateZ(0);
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
+	position: absolute;
+	width: 100%;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.countdown-wrap-link, .countdown-wrap-link:hover {
+	color: inherit;
+}
+
+.countdown-wrap-link {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+}
+
+.elementor-widget-container .thegem-te-countdown.thegem-te-countdown .countdown-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}

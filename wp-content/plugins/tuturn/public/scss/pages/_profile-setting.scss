@@ -1,0 +1,1295 @@
+/** ====== profile setting page style ====== **/
+
+.tu-asider-holder {
+    background: $white;
+    border-radius: $radius;
+    border: 1px solid $lightest_01;
+    box-shadow: $drop_shadows_lightest;
+}
+
+.tu-profilehead {
+    padding: 30px;
+}
+
+.tu-asidebox {
+    padding: 30px;
+}
+
+.tu-asidebox {
+    figure {
+        max-width: 150px;
+        margin: 0 auto 10px auto;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+.tu-uploadimage {
+    top: 0;
+    right: 0;
+    padding: 0;
+    position: absolute;
+    a {
+        display: inline-block;
+        cursor: pointer;
+        i {
+            font-size: 18px;
+            color: $light;
+            height: 42px;
+            width: 42px;
+            border: 1px solid $border-color;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 6px solid $white;
+            background: $white;
+        }
+    }
+}
+
+.tu-uploadinfo {
+    text-align: center;
+    h6 {
+        @extend %p14;
+        color: $font-light;
+        margin: 0;
+    }
+    a {
+        line-height: 40px;
+        margin: 10px 0 0;
+        width: 100%;
+    }
+}
+
+.tu-boxitem {
+    padding: 28px;
+    margin: 0 0 30px;
+    box-shadow: $drop_shadows_lightest;
+    border: 2px solid #22c55e;
+    border-radius: $radius;
+    background: $white;
+    @extend %flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.1)), $white;
+    .tu-btnrea {
+        flex: none;
+        @extend %flex;
+        align-items: center;
+        .tu-primbtn{height: 48px;}
+    }
+}
+
+.tu-alertcontent {
+    margin: 0 40px 0 0;
+    h4 {
+        margin: 0 0 10px;
+        font-weight: 600;
+    }
+    p {
+        @extend %p16;
+        margin: 0;
+    }
+}
+
+.tu-box {
+    padding: 30px;
+    box-shadow: $drop_shadows_lightest;
+    border: 1px solid $border-color;
+    background: $white;
+    @extend %flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    h3 {
+        font-weight: 600;
+        margin: 0 0 30px;
+    }
+    .tu-googlelink {
+        margin: 0 0 30px;
+    }
+}
+
+.tu-boxsm {
+    padding: 20px 30px;
+}
+
+.tu-boxarea {
+    background: $white;
+    box-shadow: $drop_shadows_light;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    .tu-box {
+        box-shadow: none;
+        border: 0;
+        border-top: 1px solid $border-color;
+        border-radius: 0 0 4px 4px;
+    }
+    .tu-boxsm {
+        border: 0;
+        box-shadow: none;
+        padding: 20px 30px;
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+.tu-boxsmtitle {
+    @extend %flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+        margin: 0;
+        font-weight: 600;
+        color: $font_color;
+    }
+    a {
+        font-weight: 600;
+        color: $hyperlink;
+        @extend %small_title;
+        &:hover{
+            color: $hyperlink;
+        }
+    }
+}
+
+.tu-labels {
+    margin: -5px;
+    @extend %flex;
+    list-style: none;
+    padding: 10px 0 0;
+    li {
+        padding: 5px;
+        list-style-type: none;
+        span {
+            height: 28px;
+            display: flex;
+            padding: 0 12px;
+            font-weight: 600;
+            align-items: center;
+            @extend %transition;
+            @extend %small_title;
+            border-radius: $radius;
+            background-color: $lightest_02;
+            color: $light;
+            &:hover {
+                background-color: $red;
+                color: $white;
+                a {
+                    color: $white;
+                }
+            }
+            a {
+                display: flex;
+                color: $light;
+                margin-left: 6px;
+                font-size: 16px;
+                font-weight: 600;
+                @extend %transition;
+            }
+        }
+    }
+}
+
+.tu-settingform {
+    .tu-label {
+        width: 100%;
+        color: $font_color;
+    }
+}
+
+.tu-status-filter {
+    padding: 0;
+    flex: auto;
+    @extend %flex;
+    margin: -10px;
+    list-style: none;
+    align-items: center;
+    li {
+        width: 100%;
+        padding: 10px;
+        max-width: 33.33%;
+        list-style-type: none;
+    }
+}
+
+.tu-status-contnent {
+    .tu-check {
+        label {
+            border-radius: $radius;
+            padding: 10.5px 18.5px;
+            border: 1.5px solid $form_idle;
+        }
+    }
+    &[disabled] {
+        .tu-check {
+            label {
+                background-color: $lightest_03;
+                color: $light;
+                pointer-events: none;
+                i {
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+.form-group-wrap .tu-status-contnent .tu-check {
+    padding-top: 0;
+}
+
+.tu-input-counter {
+    @extend %small_title;
+    color: $light;
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+    span {
+        color: $font_color;
+        @extend %small_title;
+    }
+    b {
+        font-weight: 600;
+        color: $charcoal_black;
+    }
+    em {
+        font-style: normal;
+    }
+    >* {
+        display: inline-block;
+    }
+}
+
+.tu-boxwrapper {
+    .tu-boxarea {
+        +.tu-boxarea {
+            margin-top: 30px;
+        }
+    }
+}
+
+.tu-btnarea-two {
+    margin-top: 30px;
+    @extend %flex;
+    align-items: center;
+    justify-content: flex-end;
+    span {
+        @extend %p16;
+        color: $font_color;
+        padding-right: 30px;
+    }
+}
+
+.tu-side-tabs {
+    border: 0;
+    padding-left: 0;
+    .nav-item {
+        width: 100%;
+        @extend %transition;
+        .nav-link {
+            border: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            text-align: left;
+            border-radius: 0;
+            color: $font_color !important;
+            position: relative;
+            padding: 12px 30px;
+            align-items: center;
+            @extend %transition;
+            box-shadow: inset 0px 1px 0px #eeeeee;
+            font: 400 rem(15) / em(24, 15) $body_font_family;
+            &:hover,
+            &.active {
+                background: #fcfcfc;
+                &::before {
+                    height: 100%;
+                }
+            }
+            &::before {
+                height: 0;
+                width: 4px;
+                content: "";
+                left: 0;
+                top: 0;
+                position: absolute;
+                @extend %transition;
+                background-color: $theme_color;
+            }
+            >i {
+                font-size: 18px;
+                padding-right: 10px;
+                color: $light;
+            }
+            >i.icon-x-circle {
+                color:#ff5722;
+            }
+            >i.icon-check-circle {
+                color:#4caf50;
+            }
+            >span {
+                @extend %p15;
+                display: inline-block;
+            }
+        }
+    }
+}
+.tuturn-popup .modal-dialog,
+.tu-profilepopup .modal-dialog,
+.modal-dialog {
+    max-width: 636px;
+    .form-group:not(.tu-formbtn){margin: 0;}
+}
+.modal-content {
+    border-radius: 10px;
+    border: 0;
+}
+
+.modal-header {
+    border: 0;
+    padding: 22px 30px;
+    box-shadow: inset 0px -1px 0px $lighter;
+    h5 {
+        @extend %h5;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $font_color;
+    }
+}
+.tu-close .icon{margin: 0 !important;}
+
+.tu-close {
+    font-size: 30px;
+    color: $charcoal_black;
+    &:hover {
+        color: $charcoal_black;
+    }
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.tu-formbtn {
+    padding-top: 10px;
+    [class^="tu-primbtn"] {
+        width: 100%;
+    }
+    a {
+        &+a {
+            margin-top: 15px;
+        }
+    }
+}
+
+.tu-btngray {
+    color: $font_color;
+    background: $lightest;
+    border-color: $lighter;
+    &:hover,
+    &:focus {
+        color: $light;
+        border-color: $lighter;
+        background-color: transparent;
+    }
+}
+
+.tu-deleteclr {
+    color: $red;
+}
+
+.tu-editclr {
+    color: $bright_green;
+}
+
+.tu-icon-holder {
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+    margin-left: auto;
+    a {
+        >i {
+            font-size: 18px;
+        }
+        &+a {
+            margin-left: 16px;
+        }
+    }
+    >i {
+        padding-left: 16px;
+    }
+}
+
+.tu-uploadphoto {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    background-color: $lightest_02;
+    width: 100%;
+    svg {
+        position: absolute;
+        fill: transparent;
+        stroke: $light;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: visible;
+        z-index: -1;
+        padding: 0 1px;
+        width: 100%;
+        height: 100%;
+        rect {
+            stroke-width: 1px;
+            stroke-dasharray: 10, 10;
+            rx: 10px;
+        }
+    }
+    >i {
+        color: $lighter;
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: $white;
+        border: 1px solid $lightest;
+        margin-bottom: 10px;
+    }
+    img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        padding: 2px 0;
+        font-weight: 600;
+        color: $font_color;
+        input {
+            display: none;
+        }
+        label {
+            color: $hyperlink;
+            margin: 0;
+            display: inline-block;
+            cursor: copy;
+            font-weight: inherit;
+        }
+        margin-bottom: 0;
+    }
+    p {
+        @extend %p14;
+        margin: 10px 0 0;
+        max-width: 430px;
+        color: $font_color;
+    }
+    .tu-tpbtn {
+        margin-top: 20px;
+        color: $red;
+        height: 40px;
+    }
+}
+
+.tu-thumbnails {
+    margin: -5px;
+    @extend %flex;
+    padding-left: 0;
+    &:empty{display: none;}
+    &_action {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        @extend %transition;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+            font-size: 26px;
+            color: $white;
+            cursor: pointer;
+        }
+        img {
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+    &_content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        @extend %transition;
+        figure {
+            margin: 0;
+            width: 100%;
+            border-radius: 10px;
+            @extend %transition;
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        >i {
+            position: absolute;
+            font-size: 14px;
+            color: $charcoal_black;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 50%;
+            @extend %transition;
+        }
+        &:hover {
+            background-color: $red;
+            .tu-thumbnails_action {
+                visibility: visible;
+                opacity: 1;
+            }
+            figure,
+            >i {
+                opacity: 0;
+            }
+            .tu-servicesvideo {
+                z-index: -1;
+            }
+        }
+    }
+    li {
+        width: 100%;
+        padding: 5px;
+        max-width: 20%;
+        list-style: none;
+    }
+    .tu-thumbnails_loading {
+        background-color: $lightest;
+        &:hover {
+            background-color: $lightest;
+        }
+        figure {
+            opacity: 0;
+        }
+        &::before {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            animation: spin 1.2s infinite linear;
+            content: url("./../images/circle-loader.png");
+        }
+        .tu-thumbnails_action {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+.tu-appendbtn {
+    padding: 6.5px 7px 6.5px 0;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid $form_idle;
+    border-radius: $radius;
+    width: 100%;
+    .form-control {
+        border: 0;
+        height: 34px;
+    }
+    .tu-primbtn-sm {
+        flex: none;
+        font-size: rem(14);
+        &[disabled="disabled"] {
+            background: $lightest;
+        }
+    }
+}
+
+.tu-popuptitle,
+.tb-popuptitle {
+    display: flex;
+    padding: 22px 30px;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px $lighter;
+    & h4 {
+        margin: 0;
+        @extend %h5;
+        font-weight: 600;
+        color: $font_color;
+    }
+    .close {
+        font-size: 30px;
+        margin-left: auto;
+        line-height: 30px;
+        color: $charcoal_black;
+        i {
+            margin: 0;
+            display: block;
+            line-height: inherit;
+        }
+    }
+}
+
+.tu-popupfooter {
+    text-align: right;
+    em {
+        font-style: normal;
+        +a {
+            margin-left: 20px;
+        }
+    }
+}
+
+.tb-dhb-mainheading__rightarea {
+    em {
+        font-style: normal;
+    }
+}
+
+.tb-uploadprofile .tb-dhb-mainheading__rightarea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .tb-btn {
+        margin-left: 20px;
+    }
+}
+
+.tb-btn {
+    @extend .tu-primbtn;
+    background-color: $orange;
+}
+
+.wp-editor-wrap {
+    width: 100%;
+}
+
+.tu-emptydata h6 {
+    color: #1c1c1c;
+    margin: 0;
+}
+
+.tu-emptydata h6 a {
+    color: $hyperlink;
+    display: inline-block;
+}
+
+.tu-bookingwrapper {
+    padding: 30px;
+    position: relative;
+    &+.tu-bookingwrapper {
+        box-shadow: inset 0px 2px 0px $border-color;
+    }
+    .tu-btnlist {
+        margin: 20px 0 0;
+        & .tu-btnorangesm {
+            padding: 0;
+            min-width: 40px;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 3px;
+            i {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+
+.tu-bookingperson {
+    @extend %flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 0 14px;
+    figure {
+        margin: 0 10px 0 0;
+        flex: none;
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+}
+
+.tu-bookername {
+    @extend %flex;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+        margin: 0;
+        @extend %h4;
+        font-weight: 600;
+        align-items: center;
+        display: inline-flex;
+        span {
+            margin: 0 0 0 10px;
+        }
+    }
+    >span {
+        @extend %h4;
+        font-weight: 600;
+        color: $font_color;
+    }
+}
+
+.tu-bookingonfo {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    >li {
+        @extend %flex;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        &+li {
+            margin: 6px 0 0;
+        }
+        span {
+            @extend %p16;
+            min-width: 190px;
+            display: inline-block;
+            color: $charcoal_black;
+        }
+        h6 {
+            margin: 0;
+            @extend %h6;
+            font-weight: 600;
+            color: $font_color;
+            &+a {
+                margin-left: 10px;
+            }
+            .tu-defaultlink {
+                margin: 0 0 0 10px;
+            }
+        }
+        p {
+            margin: 0;
+            @extend %p16;
+            color: $font_color;
+        }
+        &>a {
+            color: $hyperlink;
+            align-self: center;
+            font: 500 rem(14)/em(24, 14) $heading_font_family;
+            &:focus,
+            &:hover{
+                color: $hyperlink;
+            }
+        }
+    }
+    & p:empty {
+        display: none;
+    }
+}
+
+.tu-bookedinfo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        @extend %h6;
+        font-weight: 600;
+        color: $charcoal_black;
+        list-style-type: none;
+        &+li {
+            margin: 6px 0 0;
+        }
+        em {
+            display: inline-block;
+            font-style: normal;
+            @extend %h6;
+            font-weight: 600;
+            color: $light;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.tu-btnorangesm {
+    border-color: $lighter;
+    min-width: 44px;
+    padding: 0 8px;
+    background: $orange;
+    i {
+        color: $white;
+    }
+}
+
+.tu-btnlist {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    .tu-sb-sliver {
+        color: $light;
+        font-weight: 600;
+        padding: 7px 24px;
+        font-family: $heading_font_family;
+        &:hover {
+            background: transparent;
+        }
+    }
+    a {
+        &+a {
+            margin: 0 0 0 10px;
+        }
+    }
+    .tu-select {
+        max-width: 235px;
+    }
+    .tu-profilewrapper {
+        margin: 0 10px;
+        .tu-secbtn {
+            line-height: 36px;
+            i {
+                margin-left: 10px;
+            }
+            .icon-plus:before {
+                content: "\e9c0" !important;
+            }
+        }
+    }
+}
+
+.tu-booking-list {
+    margin: 0;
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    align-items: center;
+    background-color: $white;
+    box-shadow: inset 0px -1px 0px $border-color;
+    li {
+        flex: auto;
+        padding: 10px;
+        list-style-type: none;
+    }
+    .tu-exportbtn {
+        width: auto;
+        flex: none;
+    }
+    .tu-bookingdisabled {
+        a {
+            color: $light;
+            pointer-events: none;
+            background: $lightest;
+        }
+    }
+    .sv-inputhasicon {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+}
+
+.tu-exportdownload {
+    border: 0;
+    width: 100%;
+    @extend %h6;
+    height: 48px;
+    display: flex;
+    color: $white;
+    font-weight: 600;
+    padding: 7px 24px;
+    align-items: center;
+    background: $hyperlink;
+    border-radius: $radius;
+    justify-content: center;
+    span {
+        padding: 0 10px;
+        flex: none;
+        font: 600 rem(14)/em(24, 14) $heading_font_family;
+    }
+    &:hover {
+        color: $white;
+    }
+    i {
+        font-size: 20px;
+    }
+}
+
+.tu-droplist {
+    position: relative;
+    &:before {
+        right: 20px;
+        z-index: 1;
+        color: $light;
+        font-size: 20px;
+        content: "\e92e";
+        line-height: 40px;
+        position: absolute;
+        font-family: icomoon;
+        pointer-events: none;
+    }
+    &>a {
+        border-radius: 3px;
+        background: $white;
+        align-items: center;
+        display: inline-flex;
+        color: $charcoal_black;
+        border: 2px solid $lighter;
+        padding: 5px 54px 5px 24px;
+        font: 600 rem(16)/em(26, 16) $heading_font_family;
+        &:hover {
+            color: $charcoal_black;
+        }
+    }
+    &+.tu-btnorangesm {
+        margin-left: 10px;
+    }
+}
+
+.tu-dropdownlist {
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 111;
+    background: $white;
+    position: absolute;
+    border: 1px solid $lighter;
+    box-shadow: $drop_shadows_light;
+    list-style: none;
+    li {
+        margin: 10px;
+        list-style-type: none;
+        & .tu-sb-sliver,
+        a {
+            width: 100%;
+            background: $white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            @extend %transition;
+            display: inline-block;
+            color: $charcoal_black;
+            font: 600 rem(15)/em(24, 15) $body_font_family;
+            &:hover {
+                background: $lightest;
+            }
+        }
+    }
+}
+
+.tu-tagongoing {
+    border-color: $bright_green !important;
+}
+
+.tu-taggreen {
+    border: 0;
+    color: $white !important;
+    background: $bright_green !important;
+    border-color: $bright_green !important;
+}
+
+.tu-sidebar-submenu {
+    .tu-nestedmenu {
+        margin: 0;
+        list-style: none;
+        padding: 0 0 4px 0;
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.tu-side-tabs .tu-nestedmenu .nav-link {
+    background: transparent !important;
+    &.tab-active span,
+    &.active span {
+        font-weight: 600;
+        color: $theme_color;
+    }
+}
+
+.tu-side-tabs .nav-item.active>.nav-link:before {
+    height: 100%;
+}
+
+.tu-nestedmenu {
+    &>a.tab-active {
+        font-weight: 600 !important;
+        color: $theme_color !important;
+    }
+}
+
+.tu-slider-holder {
+    width: 100%;
+    .tu-syncthumbnail {
+        .splide__track>.splide__list>.splide__slide {
+            border: 0;
+        }
+    }
+}
+
+.tu-sync {
+    .tu-sync__content {
+        width: 100%;
+        margin: 0 0 10px;
+        iframe,
+        img {
+            width: 100%;
+            display: block;
+            height: 400px;
+            object-fit: cover;
+            border-radius: $radius;
+        }
+    }
+    .splide__pagination {
+        &~.splide__pagination {
+            display: none;
+        }
+    }
+}
+
+.tu-accordionedu {
+    width: 100%;
+    .tu-expinfo>i {
+        padding-left: 16px;
+    }
+}
+
+.tu-tech-title {
+    padding-right: 24px;
+}
+
+.tu-asideprostatusv2 {
+    &>.moxie-shim {
+        display: none;
+    }
+}
+
+.tu-subjectform {
+    .select2-container {
+        width: 100% !important;
+    }
+    fieldset {
+        margin: -5px;
+        & .form-group {
+            padding: 5px;
+        }
+        .form-categories {
+            padding: 0;
+            .tu-categoriesoption {
+                padding: 5px;
+                &:empty {
+                    display: none;
+                }
+            }
+            .tu_wrappersortable {
+                padding: 5px;
+                &:empty {
+                    display: none;
+                }
+            }
+        }
+        & .tu-formbtn {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.tu-bookings {
+    .tu-pagination {
+        margin: 0;
+        padding: 30px;
+        border-top: 1px solid $border-color;
+        & .tu-pagination {
+            border: 0;
+            padding: 0;
+        }
+    }
+}
+
+.tu-booking-list {
+    .tu-calendar {
+        &:before {
+            left: 20px;
+            right: auto;
+        }
+        &:after {
+            content: "\e92e";
+            font-family: icomoon;
+            right: 20px;
+            z-index: 1;
+            position: absolute;
+            font-size: 20px;
+            line-height: 1;
+            pointer-events: none;
+            color: $light;
+        }
+        .form-control {
+            cursor: pointer;
+            padding-left: 50px;
+        }
+    }
+}
+
+.woocommerce ul.order_details {
+    margin-bottom: 10px;
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+// Meeting Popup style
+.tu-radio {
+    input {
+        display: none;
+        &[type="radio"] {
+            &:checked {
+                +label {
+                    &::before {
+                        border-color: $bright_green;
+                        background-color: $bright_green;
+                    }
+                }
+            }
+        }
+    }
+    label {
+        margin: 0;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        &::before {
+            flex: none;
+            width: 20px;
+            content: '';
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            @extend %transition;
+            display: inline-block;
+            border: 1.5px solid $lighter;
+        }
+        &::after {
+            left: 5px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: $white;
+        }
+        img {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+        span {
+            font: 400 rem(15)/em(24, 15) $body_font_family;
+        }
+    }
+}
+
+.tu-meetingoption {
+    flex: auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: -10px -15px;
+    li {
+        flex: 0 0 33.33%;
+        padding: 10px 15px;
+        list-style-type: none;
+    }
+}
+
+.tu-meetingform {
+    .tu-label {
+        width: 100%;
+    }
+}
+
+.tu-bookingonfo>li .tu-meeting-detail,
+.tu-meeting-detail {
+    a {
+        display: block;
+        font: 600 rem(16)/em(26, 16) $body_font_family;
+    }
+    span {
+        color: $light;
+        display: flex;
+        min-width: auto;
+        margin: 10px 0 0;
+        align-items: center;
+        font: 600 rem(14)/em(24) $body_font_family;
+        i {
+            font-size: 18px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.tu-payouthistory {
+    .tu-booking-epmty-field {
+        padding: 30px;
+        border-top: 0;
+    }
+}
+
+.tu-dbwrapper {
+    background: $white;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.08));
+}
+
+.tu-inbox-wrapper {
+    .tu-boxsmtitle {
+        margin: 0 0 20px;
+    }
+    .at-chat.at-messanger-chat {
+        border-radius: 4px !important;
+    }
+}
+
+.tu-identity-documents-upload {
+    width: 100%;
+}
+
+.tuturn-fileprocessing.tu-infouploading {
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    li {
+        width: 100%;
+        list-style-type: none;
+        &+li {
+            margin: 15px 0 0;
+        }
+    }
+}
+.tu-formarea_list li h5{margin: 0;}
+.tu-bookingstep1 .tu-boxtitle {margin-bottom: 20px;}
+.tu-btnareafull{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        list-style-type: none;
+    }
+}
+.tu-gallaryform .form-group .tu-thumbnails{
+    padding: 0;
+    flex: auto;
+}

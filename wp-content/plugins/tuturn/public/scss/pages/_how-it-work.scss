@@ -1,0 +1,145 @@
+/** ====== how it work page style ====== **/
+.tu-howit-steps{
+    &_content{
+        width: 100%;
+        padding: 29px; 
+        display: flex;
+        position: relative;
+        background: $white;
+        border-radius: $radius;
+        align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid $border-color;
+        box-shadow:$drop_shadows_lightest;
+        figure{
+            width: 100%;
+            text-align: center;
+            margin: 0 0 30px !important;
+            img{
+                width: 100%;
+                border-radius: $radius;
+            }
+        }
+    }
+    &_info{
+        @extend %flex;
+        text-align: center;
+        align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
+        > h5{
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: $font_color;
+        }
+        > p{
+            margin-bottom: 0;
+            font-size: rem(16);
+            color: $font_color;
+            line-height: em(26,16);
+        }
+    }
+}
+.tu-step-tag{
+    display: block;
+    color: $white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 4px 10.1px;
+    @extend %small_title;
+    border-radius: $radius;
+    background-color: black;
+}
+.tu-orange-bgclr{
+    background-color: $orange;
+}
+.tu-green-bgclr{
+    background-color: $bright_green;
+}
+.tu-blue-bgclr{
+    background-color: $hyperlink;
+}
+.tu-purple-bgclr{
+    background-color: $blazing_purple;
+}
+.tu-processing-holder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: 50%;
+    background-color: $white;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.tu-processing-content{
+    flex: auto;
+    width: 100%;
+    max-width: 50%;
+    padding: 80px 50px;
+    background-color: $white;
+    & > .tu-maintitle,
+    & > .tu-processing-list{
+        max-width: 650px;
+    }
+}
+.tu-processing-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        list-style-type: none;
+        p{
+            font-size: rem(16);
+            margin: 0 0 0 78px;
+            color: $font_color;
+            line-height: em(26,16);
+        }
+        + li{
+            margin-top: 20px;
+        }
+    }
+}
+.tu-processing-img{
+    width: 100%;
+    max-width: 50%;
+    align-self: flex-start;
+    figure{
+        margin-bottom: 0;
+    }
+}
+.tu-processinglist-info{
+    display: flex;
+    align-items: center;
+    i{
+        flex: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        font-size: 24px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    h4{
+        font-weight: 600;
+        color: $font_color;
+        margin: 0 0 0 16px;
+    }
+}
+.tu-iconpurple_bgclr{
+    background-color: rgba(115, 87, 251, 0.1);
+    color: #7357FB;
+}
+.tu-icongreen_bgclr{
+    background: rgba(24, 185, 155, 0.1);
+    color: #18B99B;
+}
+.tu-iconorange_bgclr{
+    background: rgba(255, 97, 103, 0.1);
+    color: #FF6167;
+}
+.tu-banner_list-two{
+    padding-top: 0;
+    justify-content: center;
+}

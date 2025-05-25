@@ -1,0 +1,130 @@
+.elementor-edit-area-active .elementor-container.elementor-column-gap-thegem .elementor-column-wrap.elementor-element-empty .elementor-widget-wrap {
+	margin-left: 21px;
+	margin-right: 21px;
+}
+
+.custom-page-title, .custom-footer {
+	position: relative;
+}
+
+.edit-template-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(244, 246, 247, 0.8);
+	z-index: 99;
+}
+
+.edit-template-overlay .buttons {
+	display: flex;
+}
+
+.edit-template-overlay .buttons a {
+	position: initial;
+	display: block;
+	font-family: 'Montserrat UltraLight', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	height: 40px;
+	line-height: 40px;
+	background: #6e7882;
+	border: 1px solid #6e7882;
+	padding: 0 17px;
+	transition: all 0.2s;
+}
+
+.edit-template-overlay .buttons a:hover {
+	background: #99a4a8;
+	border-color: #99a4a8;
+}
+
+.edit-template-overlay .buttons a.doc {
+	color: #6e7882;
+	background: transparent;
+	margin-left: 10px;
+}
+
+.edit-template-overlay .buttons a.doc:hover {
+	color: #99a4a8;
+}
+
+.thegem-template-edit-button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 10;
+}
+
+.gem-slideshow-editor {
+	position: relative;
+	height: 400px;
+}
+
+@font-face{
+	font-family: 'thegem-elementor';
+	src: url('../icons/fonts/thegem-elementor.eot');
+	src: url('../icons/fonts/thegem-elementor.eot?#iefix') format('embedded-opentype'),
+	url('../icons/fonts/thegem-elementor.woff') format('woff'),
+	url('../icons/fonts/thegem-elementor.ttf') format('truetype'),
+	url('../icons/fonts/thegem-elementor.svg#thegem-elementor') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.template-post-empty-output{
+	text-align: center !important;
+	margin: 8px 3px !important;
+	padding: 20px;
+	justify-content: center !important;
+	font-weight: normal !important;
+}
+.template-post-empty-output:before{
+	font-family: 'thegem-elementor';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	width: 24px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+.template-post-empty-output.thegem-te-post-title:before {
+	content: "\e652";
+}
+.template-post-empty-output.thegem-te-post-excerpt:before {
+	content: "\e65a";
+}
+.template-post-empty-output.thegem-te-post-breadcrumbs:before {
+	content: "\e654";
+}
+.template-post-empty-output.thegem-te-featured-image:before {
+	content: "\e655";
+}
+.template-post-empty-output.thegem-te-post-comments:before {
+	content: "\e656";
+}
+.template-post-empty-output.thegem-te-post-content:before {
+	content: "\e657";
+}
+.template-post-empty-output.thegem-te-post-author:before {
+	content: "\e658";
+}
+.template-post-empty-output.thegem-te-post-info:before {
+	content: "\e659";
+}
+.template-post-empty-output.thegem-te-featured-content:before {
+	content: "\e65b";
+}
+.template-post-empty-output.thegem-te-post-navigation:before {
+	content: "\e65b";
+}
+.template-post-empty-output.thegem-te-post-tags:before {
+	content: "\e65b";
+}

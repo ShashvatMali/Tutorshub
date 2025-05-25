@@ -1,0 +1,256 @@
+/** ====== global classes ====== **/
+.tu-main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tu-main-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.tu-bggreen{background-color: $bright_green !important;}
+.tu-maintitle{
+    padding-bottom: 30px;
+    &.text-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{margin-bottom: 20px;}
+    h4{
+        font-weight: 400;
+        margin-bottom: 0;
+        color: $font_color;
+        span{
+            font-weight: 600;
+            color: $theme_color;
+        }
+    }
+    h2{
+        font-weight: 600;
+        margin-bottom: 0;
+        max-width: 550px;
+        span{
+            color: $hyperlink;
+        }
+        + p{padding-top: 20px;}
+    }
+    p{
+        margin-bottom: 0;
+        color: $font_color;
+        font-size: rem(16);
+        line-height: em(26,16);
+    }
+    > a{margin-top: 30px;}
+}
+.tu-mainbtn{
+    text-align: center;
+    padding-top: 40px;
+}
+.tu-green{color: $bright_green !important;}
+.tu-blue{color: $hyperlink !important;}
+.tu-orange{color: $orange !important;}
+/** --- pagination styling --- **/
+.tu-pagination { 
+    @extend %flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    .tu-pagination{margin: 0;}
+    ul {
+        @extend %flex;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: -5px;
+        padding-left: 0;
+        list-style: none;
+        li {
+            padding: 5px;
+            line-height: inherit;
+            list-style-type:none;
+            display: inline-block;
+            vertical-align: middle;
+            span,
+            a{
+                width: 44px;
+                height: 44px;
+                @extend %small_title;
+                font-weight: 600;
+                @extend %flex;
+                @extend %transition;
+                align-items: center;
+                background-color: #fff;
+                justify-content: center;
+                border-radius: $radius;
+                color: $light;
+                border: 1px solid $border_color;
+                &.next{
+                    margin-left: 40px;
+                }
+                &.prev {
+                    margin-right: 40px;
+                }
+            }
+            i{font-size: 24px;line-height: inherit;}
+            & a:hover,
+            & .current,
+            &.active a{
+                color: #fff;
+                border-color: $theme_color;
+                background-color: $theme_color;
+            }
+        }
+    }
+}
+.tu-pagination-prev{
+    padding-right: 45px !important;
+}
+.tu-pagination-next{
+    padding-left: 45px !important;
+}
+/** --- calendar global styling --- **/
+.litepicker .container__days .day-item,.litepicker .container__months .month-item-weekdays-row>div{
+    color: $charcoal_black;
+    @extend %h6;
+}
+.litepicker .container__months .month-item-weekdays-row>div{
+    box-shadow: inset 0px -1px 0px #DDDDDD;
+}
+.litepicker .container__months .month-item-header div>.month-item-name,.litepicker .container__months .month-item-header div>.month-item-year{
+    @extend %h5;
+    padding: 0;
+    font-weight: 600;
+    border: 0;
+    width: auto;
+    background-image: none;
+}
+.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-next-month>svg{
+    color: $charcoal_black;
+    fill: $charcoal_black;
+}
+.litepicker .container__days .day-item.is-end-date,
+.litepicker .container__days .day-item.is-start-date{
+    background: $theme_color;
+    color: $white;
+}
+.litepicker .container__days .day-item.is-start-date{
+    border-radius: 25px 0px 0px 25px;
+}
+.litepicker .container__days .day-item.is-end-date{
+    border-radius: 0px 25px 25px 0px;
+}
+.litepicker .container__days .day-item.is-in-range{
+    background:#E1D6E5;
+}
+.litepicker .container__days .day-item:hover{
+    box-shadow: inset 0 0 0 2px #6A307D;
+    color: $font_color;
+    border-radius: 25px;
+}
+.litepicker .container__months,.litepicker .container__months .month-item{
+    width: 337px;
+    padding: 0;
+}
+.litepicker .container__days>div, .litepicker .container__days>a{
+    padding: 11px 0;
+    min-width: 48px;
+}
+.litepicker .container__days .day-item.is-today{
+    box-shadow: inset 0px -2px 0px #6A307D;
+    color: $charcoal_black;
+    border-radius: 0;
+}
+.litepicker .container__months .month-item-header{
+    padding: 16px;
+}
+.litepicker .container__days .day-item.is-start-date.is-end-date{
+    border-radius: 25px;
+    color: #fff;
+}
+/** --- preloader styling --- **/
+.tuturn-preloader-section{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background: rgb(255 255 255 / 0.6);
+    .tuturn-preloader-holder{
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        background: #fff;
+        margin: -15px 0 0 -15px;
+        -webkit-box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tuturn-loader {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        -webkit-animation: sectionloader 0.5s infinite linear;
+        animation: sectionloader 0.8s infinite linear;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        background: var(--themecolor);
+        background: -moz-linear-gradient(left, var(--themecolor) 10%, rgba(255, 88, 81, 0) 42%);
+        background: -webkit-linear-gradient(left, var(--themecolor) 10%, rgba(255, 88, 81, 0) 42%);
+        background: -o-linear-gradient(left, var(--themecolor) 10%, rgba(255, 88, 81, 0) 42%);
+        background: -ms-linear-gradient(left, var(--themecolor) 10%, rgba(255, 88, 81, 0) 42%);
+        background: linear-gradient(to right, var(--themecolor) 10%, rgba(255, 88, 81, 0) 42%);
+        &:before {
+            width: 50%;
+            height: 50%;
+            border-radius: 100% 0 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background: #1b355e;
+        }
+        &:after {
+            background: #fff;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            content: "";
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+@keyframes sectionloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.splide__pagination__page{
+    opacity: 1;
+    margin: 0 5px;
+    &.is-active {
+        opacity: 1;
+        background: #6a307d;
+    }
+}
+.tu-bookedslots{
+    width: 100%;
+}

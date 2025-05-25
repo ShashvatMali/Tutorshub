@@ -1,0 +1,262 @@
+/** ====== contact page style ====== **/
+.tu-slider-section{
+    padding: 80px 0;
+    background-color: $lightest_02;
+}
+.tu-faq-holder{
+    margin:0;
+}
+.tu-faq-category{
+    width: 100%;
+    @extend %flex;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    @extend %transition;
+    justify-content: center;
+    background-color: $white;
+    figure{
+        margin-bottom: 0;
+        img{
+            margin: 0 auto;
+            max-width: 100px;
+       }
+    }
+    &-active{
+        box-shadow: inset 0px -3px 0px $theme_color;
+         border-radius: 10px;
+    }
+}
+.tu-faq_desp{
+    margin-top: 20px; 
+    h5{
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $font_color;
+    }
+    span{
+        @extend %h6;
+        color: $light;
+        display: block;
+        font-weight: 400;
+    }
+}
+.tu-faqsslider {
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.04));
+    
+    .splide__pagination{
+        bottom: 0;
+        position: relative;
+        margin-top: 20px;
+    }
+}
+.tu-faq-search{padding-bottom: 60px;}
+.tu-faq_input{
+    .tu-inputappend{
+        margin: 0 auto;
+        max-width: 856px;
+        .form-control{
+            border: 0;
+            padding-left: 10px;
+        }
+    }
+    .tu-placeholderholder{
+        width: auto;
+        flex: auto;   
+    }
+    .tu-placeholder{
+        left: 10px;
+    }
+}
+.tu-acoridan_title{
+    h3{
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $font_color;
+        padding-bottom: 20px;
+    }
+}
+.tu-faq-section.tu-main-section{
+    padding-bottom: 0;
+    padding-top: 80px;
+}
+.tu-accordion-faq{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        cursor: pointer;
+        margin-bottom: 20px;
+        list-style-type: none;
+        border-radius: $radius;
+        background-color: $lightest_02;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &_title{
+        @extend %flex;
+        padding: 20px;
+        position:relative;
+        align-items: center;
+        &[aria-expanded="true"]{
+            &:after{content: "\e9a3";}
+        }
+        &:after{
+            right: 15px;
+            content: "\e9c0";
+            font-size: 24px;
+            line-height: 18px;
+            position: absolute;
+            color: $font_color;
+            @extend %transition;
+            font-family: 'icomoon' !important;
+        }
+        h5{
+            margin-bottom: 0;
+            font-weight: 600;
+            color: $font_color;
+            padding-right: 30px;
+        }
+    }
+    &_info{
+        cursor: default;
+        padding: 0 20px 20px;
+        p{
+            margin: 0;
+            @extend %p16;
+            color: $font_color;
+            ~ p{padding-top: 26px;}
+        }
+    }
+}
+.tu-question-section{
+    @extend %flex;
+    padding: 40px;
+    align-items: center;
+    border-radius: $radius;
+    background-color: $dark;
+    justify-content: space-between;
+}
+.tu-faq-search_title{
+    h5{
+        margin: 0;
+        color: $white;
+        font-weight: 400;
+    }
+    h2{
+        margin: 0;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+.tu-question_desc{
+    padding-top: 20px;
+    max-width: 592px;
+    p{
+        @extend %p16;
+        color: $white;
+        margin-bottom: 0;
+    }
+}
+    
+//modal box styling
+.tu-popup-terms{
+    width: 100%;
+    button{
+        margin-top:20px;
+        width: 100%;
+    }
+}
+.tu-inputappend{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    box-shadow: $drop_shadows_medium;
+    border-radius: $radius;
+    > a{
+        font-size: 20px;
+        color: $form_selected;
+        display: inline-flex;
+    }
+    > .form-control{
+        border: 0;
+        width: auto;
+        flex: auto;
+        box-shadow: none;
+        padding: 0 16px;
+        &:focus{box-shadow: none;}
+    }
+    &_right{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+}
+.tu-maintitle{
+    h2{
+        
+      font-weight: 600
+    }
+    h5{
+        font-weight: 600
+    }
+    h5,h2{
+        margin-bottom: 0;
+        color: $font_color;
+    }
+    + .tu-main-description{padding-top: 20px;}
+}
+.tu-faqform{
+    width: 100%;
+    .tu-searcbar{
+        .tu-inputicon{
+            display: inline-flex;
+            flex-wrap: nowrap;
+            > a{
+                left: 0;
+                z-index: 1;
+                color: #999999;
+                font-size: 20px;
+                position: relative;
+            }
+        }
+    }
+}
+.tu-sliderarrow {
+    position: relative;
+    .splide__arrow {
+        width: 70px;
+        height: 70px;
+        background: $white;
+        border-radius: 50%;
+        z-index: 1;
+        opacity: 1;
+        box-shadow: $drop_shadows_medium;
+        &::before{
+            @extend %transition;
+            font-family: "icomoon";
+            font-size: 30px;
+            color: $lighter;
+        }
+        &:hover {
+            &::before {color: $dark;}
+        }
+        svg {display: none;}
+    }
+    .splide__arrow--prev {
+        left: -35px;
+        &::before {content: "\e92f";}
+    }
+    .splide__arrow--next {
+        right: -35px;
+        &::before {content: "\e930";}
+    }
+}
+.tu-faqholderwrap{
+    width: 100%;
+    display: inline-block;
+}

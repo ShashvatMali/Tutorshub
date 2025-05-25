@@ -1,0 +1,871 @@
+.tu-btn span + em,
+.tu-primbtn span + em,
+.tu-secbtn span + em,
+.tu-yellowbtn span + em,
+.tu-primbtn-lg span + em,
+.tu-primbtn-sm span + em,
+.tu-primbtn-ico span + em {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.tu-btn span + i,
+.tu-primbtn span + i,
+.tu-secbtn span + i,
+.tu-yellowbtn span + i,
+.tu-primbtn-lg span + i,
+.tu-primbtn-sm span + i,
+.tu-primbtn-ico span + i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.tu-btn span + i.icon-chevron-right::before,
+.tu-primbtn span + i.icon-chevron-right::before,
+.tu-secbtn span + i.icon-chevron-right::before,
+.tu-yellowbtn span + i.icon-chevron-right::before,
+.tu-primbtn-lg span + i.icon-chevron-right::before,
+.tu-primbtn-sm span + i.icon-chevron-right::before,
+.tu-primbtn-ico span + i.icon-chevron-right::before {
+  content: "\e92f";
+}
+
+.tu-taglinks li {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.tu-taglinks li:not(:last-child)::after {
+  right: auto;
+  left: -5px;
+}
+
+.tu-success-section:after {
+  right: auto;
+  left: 0;
+}
+
+.tu-success-section::before {
+  left: auto;
+  right: 0;
+}
+
+.tu-success-stories::after {
+  right: auto;
+  left: 0;
+}
+
+.tu-sucesstor_pattren {
+  right: 0;
+}
+
+.tu-sucesstorieslider .splide__arrows {
+  right: auto;
+  left: 0;
+}
+
+.tu-splidearrow .splide__arrows {
+  flex-direction: row-reverse;
+}
+
+.tu-featuretag {
+  left: auto;
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.tu-authordetail figure {
+  margin-right: 0 !important;
+  margin-left: 10px !important;
+}
+
+.tu-authorname h5 i {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.tu-rating {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tu-instructors_footer-right > a {
+  border-left: 0;
+  border-right: 1px solid #eeeeee;
+}
+
+.tu-starthere {
+  left: auto;
+  right: -30px;
+  transform: translateX(100%);
+}
+
+.tu-banner_explore {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.tu-banner_explore i {
+  left: auto;
+  right: 0;
+}
+
+.tu-betterresult > img {
+  right: auto;
+  left: 110px;
+}
+
+.tu-betterresult .tu-resultperson {
+  right: auto;
+  left: 24px;
+}
+
+.tu-bannerv3::before,
+.tu-bannerv2::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
+
+.tu-dottedimage,
+.tu-bannerv2_img {
+  right: auto;
+  left: 0;
+}
+
+.tu-bannerv3 .tu-particles {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
+
+.tu-linedimage {
+  left: auto;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
+
+.tu-linedimage img {
+  left: auto;
+  right: 0;
+  transform: rotate(-82deg);
+}
+
+.select2:before {
+  right: auto;
+  left: 18px;
+}
+
+.tu-searchbar-wrapper .tu-appendinput .tu-select > i, .tu-searchbar-wrapper .tu-appendinput .tu-calendar > i {
+  left: auto;
+  right: 20px;
+}
+
+.tu-searchbar-wrapper .tu-appendinput .select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.tu-searchbar-wrapper .tu-appendinput .tu-inputicon .form-control {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.tu-searchbar-wrapper .tu-appendinput .tu-inputicon a {
+  left: auto;
+  right: 10px;
+}
+
+.tu-eduplatform_img + .tu-eduplatform_info {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.tu-popularsearches h5 {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.tu-success-section .tu-maintitle > .tu-primbtn-lg {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-sucesstor_img {
+  margin-right: 0;
+  margin-left: 67px;
+}
+
+.tu-processing-holder {
+  background-position: right;
+}
+
+.tu-processinglist-info h4 {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+.tu-filter-btn a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-listing-search {
+  padding-right: 0;
+  padding-left: 19px;
+}
+
+.tu-listing-search figure {
+  padding: 0 24px 0 15px;
+}
+
+.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered {
+  padding-right: 19px;
+  padding-left: 40px;
+}
+
+.tu-asidetitle h5::after {
+  right: auto;
+  left: 0;
+}
+
+.tu-check label:before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-categoriesfilter label i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.tu-checksm input[type=checkbox] + label .tu-featureRating .tu-totalreview {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-rangeslider span em,
+.tu-rangeslider span span {
+  float: left;
+}
+
+.tu-listing-slider {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.tu-listinginfo_two .tu-listinginfo-img figure {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-listing-heading h4 i, .tu-listing-heading h5 i {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.tu-listing-location > address > i {
+  padding-right: 0;
+  padding-left: 6px;
+}
+
+.tu-rating h6 + i {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.tu-rating > i + span {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.tu-iconheart > .tu-linkheart i,
+.tu-iconheart i {
+  padding-right: 0;
+  padding-left: 6px;
+}
+
+.tu-listinginfo_two .tu-listinginfo_price {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tu-listinginfo_wrapper .tu-instructors_service p {
+  text-align: right;
+}
+
+.tu-listinginfo_wrapper .tu-instructors_service-list li i {
+  padding-right: 0;
+  padding-left: 6px;
+}
+
+.tu-pagination ul li span.next i::before,
+.tu-pagination ul li a.next i::before {
+  content: "\e92f";
+}
+.tu-pagination ul li span.prev i::before,
+.tu-pagination ul li a.prev i::before {
+  content: "\e930";
+}
+
+.tu-accordion-faq_title h5 {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.tu-accordion-faq_title:after {
+  right: auto;
+  left: 15px;
+}
+
+.tu-popuptitle .close,
+.tb-popuptitle .close {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-profilepopup .modal-body .wpcf7,
+.tu-profilepopup .modal-body .wpcf7 input[type=url], .tu-profilepopup .modal-body .wpcf7 input[type=email], .tu-profilepopup .modal-body .wpcf7 input[type=tel] {
+  direction: rtl;
+}
+.tu-profilepopup .wpcf7-form-control.wpcf7-checkbox {
+  padding-left: 19px;
+  padding-right: 0;
+}
+.tu-profilepopup .wpcf7-checkbox input + span::before, .tu-profilepopup .wpcf7-form-control input + span::before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-articleauth span {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.tu-artical-list .tu-articleinfo {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tu-tutorprofilewrapp .tu-cardtag {
+  right: auto;
+  left: 30px;
+}
+
+.tu-profileview figure {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-protutordetail h3 > i:first-child {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-startingrate {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+.tu-tutorreview li > span i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.tu-tutorreview li > span i em {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-actionbts > a i {
+  margin-left: 10px;
+  margin-right: 0;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-profilelinksbtn {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tu-linkheart i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.tu-nav-tabs .nav-item .nav-link span {
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.tu-branchdetail li i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.tu-availabletable tbody tr th {
+  text-align: right;
+}
+
+.tu-featureinclude li > span i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.tu-listinfo li > span {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.tu-commentlist figure {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-placeholder {
+  left: auto;
+  right: 20px;
+}
+
+.tu-input-group .tu-showpassword {
+  right: auto;
+  left: 20px;
+}
+
+.tu-uploadimage {
+  right: auto;
+  left: 0;
+}
+
+.tu-sidebar-dropdown > a::after {
+  right: auto;
+  left: 20px;
+  content: "\e92f";
+}
+
+.tu-formarea_title::after {
+  margin-left: 0;
+  margin-right: auto;
+  content: "\e92f";
+}
+.tu-formarea_title h6 {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.tu-formarea_title h6 span i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-formarea_title[aria-expanded=true]::after,
+.tu-sidebar-dropdown.active > a::after {
+  transform: rotate(-90deg);
+}
+
+.tu-side-tabs .nav-item .nav-link > i {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.tu-side-tabs .tu-sidebar-dropdown .tu-sidebar-submenu .nav-link {
+  padding-left: 20px;
+  padding-right: 58px;
+}
+
+.tu-labels li span a {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.tu-btnarea-two span {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.tu-inputicon > *:first-child {
+  left: auto;
+  right: 19px;
+}
+.tu-inputicon .form-control {
+  padding-right: 49px;
+  padding-left: 19px;
+}
+.tu-inputicon .tu-placeholder {
+  left: auto;
+  right: 50px;
+}
+
+.tu-icon-holder a + a {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+.tu-accordionedu .tu-expinfo > i {
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+.tu-calendar:before {
+  right: auto;
+  left: 20px;
+}
+
+.tu-select .form-control, .tu-calendar .form-control {
+  padding-right: 19px;
+  padding-left: 49px;
+}
+
+.tu-tab .nav .nav-link i {
+  padding-right: 0;
+  padding-left: 14px;
+}
+
+.tu-newslots i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-sort-by {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-selectwrapper > span {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-right-side-list li .tu-add-btn {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-doclist_content img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-doclist_title {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.tuturn-preloader-section .tuturn-preloader-holder {
+  right: 50%;
+  left: auto;
+}
+
+.tu-alertcontent {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.tu-invoicestable .dhb-table.table > tbody > tr td:last-child {
+  text-align: right;
+}
+
+.dhb-table.table > tbody > tr td .tu-linksm {
+  text-align: right;
+  justify-content: flex-end;
+}
+.dhb-table.table > tbody > tr td .tu-linksm i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.dhb-table.table > tbody > tr td .tu-linksm i::before {
+  content: "\e92f";
+}
+
+.tu-booking-list .tu-calendar .form-control {
+  padding-left: 19px;
+  padding-right: 50px;
+}
+.tu-booking-list .tu-calendar:before {
+  right: 20px;
+  left: auto;
+}
+.tu-booking-list .tu-calendar:after {
+  right: auto;
+  left: 20px;
+}
+
+.tu-bookingperson figure {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-bookername h4 span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-bookingonfo > li h6 + a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-btnlist .tu-profilewrapper .tu-secbtn i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-radio label img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.tu-radio label::before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.tu-radio label::after {
+  left: auto;
+  right: 5px;
+}
+
+.tu-select select {
+  background-position: left;
+}
+
+.tu-incomeprice > span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.tu-incomeprice h5 {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.tu-incomeprice h5 span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.tu-incomeprice a i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.tu-incomeprice a i::before {
+  content: "\e92f";
+}
+
+.tu-payinfo .tu-check img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-methodwrap a i {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.tu-accountmethods li + li::after {
+  left: auto;
+  right: -4px;
+}
+
+.tu-withdrawform .form-grouppayments > .tu-label {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-withdrawform .tu-popupbtnarea > .tu-check {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.tu-plandetail h3 span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-plandetail .woocommerce-Price-currencySymbol,
+.tu-plandetail .woocommerce-Price-amount.amount {
+  margin-right: 0;
+}
+
+.tu-signup-form .tu-check input[type=checkbox] + label {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.tu-signup-form .tu-check input[type=checkbox] + label::before {
+  left: auto;
+  right: 0;
+}
+
+.tu-bookingonfo > li .tu-meeting-detail span i, .tu-meeting-detail span i {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.tu-authorlist li em {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.tu-nav-tabs .nav-item {
+  border-right: 0;
+  border-left: 1px solid #eeeeee;
+}
+
+.tu-stars span:after, .tu-stars:before {
+  left: auto;
+  right: 0;
+}
+
+.tu-footer .tu-footerlist li.tu-footerlist-explore {
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+}
+
+.tu-listinginfo-img figure {
+  margin-right: 0;
+  margin-left: 14px;
+}
+
+.tu-date em {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.tu-icon-holderv2 i {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.tu-btnarea a + a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding-left: 40px;
+  padding-right: 19px;
+}
+
+select[required] + .select2 .select2-selection--multiple .select2-search.select2-search--inline::after {
+  margin-left: 0;
+  margin-right: -30px;
+}
+
+[aria-multiselectable=true] .select2-results__option:before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-apspaces .tu-check label {
+  border-left: 0;
+  border-right: 1.5px solid #e1e1e1;
+}
+
+.tu-apspaces .tu-check:first-child label {
+  border-radius: 0 4px 4px 0;
+}
+
+.tu-apspaces .form-control {
+  border-radius: 4px 0 0 4px;
+}
+
+.tu-apspaces .tu-check ~ div label {
+  border-left: 0;
+  border-right: 1.5px solid #e1e1e1;
+}
+
+.tu-undayslist_title {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.tu-undayslist_content > a {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-undayslist_title h5 b {
+  padding-right: 0;
+  padding-left: 17px;
+}
+
+.tu-popupfooter em + a {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.tu-appendbtn {
+  padding-right: 0;
+  padding-left: 7px;
+}
+
+.tu-placeholderholder.tu-invalid:before {
+  right: auto;
+  left: 20px;
+}
+
+.tu-placeholderholder.tu-invalid > input {
+  padding-right: 19px;
+  padding-left: 50px;
+}
+
+.tu-listinginfo-holderv2 .tu-btnarea a i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-popimghead img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-invoivebtns a {
+  flex-direction: row-reverse;
+}
+
+.tu-userinvoice li i {
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.tu-userinvoice {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-billinfo li {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+table.tu-tableinvoice tbody tr td,
+table.tu-tableinvoice thead tr th {
+  text-align: right;
+}
+
+.tu-searchtags li span a {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.tu-placeholderholder.tu-valid:before {
+  right: auto;
+  left: 20px;
+}
+
+.tu-placeholderholder.tu-valid > input {
+  padding-right: 19px;
+  padding-left: 50px;
+}
+
+.tu-savedinfo figure {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tu-savedtites h4 i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-savebtns a + a {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.tu-commentauthor h6 span {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.tu-listing-location.tu-ratingstars > span {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=rtl.css.map */

@@ -1,0 +1,77 @@
+.thegem-te-wishlist {
+	position: relative;
+}
+
+.thegem-te-wishlist .wishlist-link {
+	position: relative;
+	display: flex;
+	color: var(--thegem-to-menu-level1-color, #3C3950);
+}
+
+.thegem-te-wishlist i.default:before {
+	font-family: 'thegem-icons';
+	content: '\e66b';
+	font-style: normal;
+	vertical-align: top;
+}
+
+.thegem-te-wishlist .wishlist-link:hover {
+	color: var(--thegem-to-menu-level1-color-hover, #00BCD4);
+}
+
+.thegem-te-wishlist .wishlist-link .gem-icon {
+	color: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: none;
+}
+
+.thegem-te-wishlist .wishlist-link .gem-icon i {
+	transition: none;
+}
+
+.thegem-te-wishlist .wishlist-link .gem-icon svg {
+	fill: currentColor;
+	max-width: 100%;
+	width: auto;
+	max-height: 100%;
+	height: auto;
+}
+
+.thegem-te-wishlist .wishlist-items-count {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	top: 2px;
+	right: -8px;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	font-size: 11px;
+	font-style: normal;
+	color: var(--thegem-to-main-bg-color, #FFFFFF);
+	background-color: var(--thegem-to-cart-amount-color, var(--thegem-to-styled-color1));
+	transform: translateY(-50%);
+}
+
+/*Tiny icon*/
+.thegem-te-wishlist .gem-icon-size-tiny {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+}
+
+/*Use Light Color Scheme*/
+#site-header.header-light .thegem-te-wishlist .wishlist-link {
+	color: var(--header-builder-light-color, #FFFFFF);
+}
+
+#site-header.header-light .thegem-te-wishlist .wishlist-link:hover {
+	color: var(--header-builder-light-color-hover, #00BCD4);
+}
+

@@ -1,0 +1,336 @@
+/* header rtl */
+.tu-themenav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-navbar .menu-item-has-children>a:after {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.tu-navbarbtn {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.tu-headerwrap__right .tu-navbarbtn .sub-menu {
+  right: auto;
+  left: 0;
+}
+
+.tu-menudropdown a i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-navbar .sub-menu .menu-item-has-children>a:after,
+.tu-navbar .children .page_item_has_children>a:after {
+  content: "\e92f";
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-themenav .menu-item-has-children .sub-menu .sub-menu,
+.tu-themenav .page_item_has_children .children .children {
+  right: auto;
+  left: 100%;
+}
+
+/* blog rtl */
+.tu-taglinks li {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.tu-taglinks li:not(:last-child)::after {
+  right: auto;
+  left: -8px;
+}
+
+.entry-meta>span i,
+.tuturn-entry-meta>span i,
+.tuturn-posted-on i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.post-categories li {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.post-categories li:not(:last-child)::after {
+  right: auto;
+  left: -5px;
+}
+
+.tu-blogiteminfo li .tuturn-posted-on i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tu-blogiteminfo li i span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.tu-mainlist li {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.tu-mainlist li::after {
+  left: auto;
+  right: 0;
+}
+
+.tu-theme-box>.tuturn-cat-links>i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.tu-theme-box>.tuturn-cat-links>.post-categories {
+  margin: -8px 4px -8px -8px;
+}
+
+.tu-authorhead>img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tuturn-comments .tu-blogimg>figure {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.tuturn-comments .tuturn-reply {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.depth-2>.tu-addcomment {
+  padding-right: 80px;
+  padding-left: 0;
+}
+
+.depth-3>.tu-addcomment {
+  padding-right: 160px;
+  padding-left: 0;
+}
+
+.depth-4>.tu-addcomment {
+  padding-right: 240px;
+  padding-left: 0;
+}
+
+.depth-5>.tu-addcomment {
+  padding-right: 320px;
+  padding-left: 0;
+}
+
+.tuturn-comments .tu-main-description {
+  padding: 20px 80px 0 0;
+}
+
+.comment-respond #cancel-comment-reply-link {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.comment-respond .comment-form-cookies-consent+.form-group {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.comment-form-cookies-consent input[type="checkbox"]+label:before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* footer rtl */
+.tu-footerdark .widget_nav_menu ul li,
+.tu-footerdark .widget_rss ul li,
+.tu-footerdark .widget_recent_comments ul li,
+.tu-footerdark .widget_meta ul li,
+.tu-footerdark .widget_categories ul li,
+.tu-footerdark .widget_archive ul li,
+.tu-footerdark .tuturn-widget_categories>ul li,
+.tu-footerdark .widget_recent_entries>ul li,
+.tu-footerdark .wp-block-latest-posts__list li,
+.tu-footerdark .wp-block-latest-comments li,
+.tu-footerdark .wp-block-categories-list li,
+.tu-footerdark .wp-block-archives-list li,
+.tu-footerdark .widget_pages ul li {
+  padding-left: 0;
+  padding-right: 17px;
+}
+
+.tu-footerdark .widget_nav_menu ul li:before,
+.tu-footerdark .widget_rss ul li:before,
+.tu-footerdark .widget_recent_comments ul li:before,
+.tu-footerdark .widget_meta ul li:before,
+.tu-footerdark .widget_categories ul li:before,
+.tu-footerdark .widget_archive ul li:before,
+.tu-footerdark .tuturn-widget_categories>ul li:before,
+.tu-footerdark .widget_recent_entries>ul li:before,
+.tu-footerdark .wp-block-latest-posts__list li:before,
+.tu-footerdark .wp-block-latest-comments li:before,
+.tu-footerdark .wp-block-categories-list li:before,
+.tu-footerdark .wp-block-archives-list li:before,
+.tu-footerdark .widget_pages ul li:before {
+  left: auto;
+  right: 0;
+}
+
+.tu-footer:before {
+  left: auto;
+  right: 0;
+}
+
+.tu-footer:after {
+  right: auto;
+  left: 0;
+}
+
+.tu-footer .tu-footerlist li {
+  padding-left: 0 !important;
+  padding-right: 20px;
+}
+
+.tu-footer .tu-footerlist li:before {
+  left: auto;
+  right: 0;
+}
+
+.tu-footerlist li a em {
+  padding-right: 0;
+  padding-left: 14px;
+}
+
+.widget_tuturn_nav_menu .tu-nav-menu-widget>li>a::before {
+  margin: 12px 0 0 14px;
+}
+
+.tu-footerlist-explore {
+  padding-left: 0 !important;
+  padding-right: 29px !important;
+}
+
+/* 404 page not found */
+.tu-notfound-img img {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-notfound .tu-formsearch .form-control {
+  padding-left: 19px;
+  padding-right: 50px;
+}
+
+.tu-notfound .tu-formsearch .form-group:before {
+  left: auto;
+  right: 20px;
+}
+
+.tu-notfound .tu-searchgbtn {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* wocomerece rtl */
+
+.rtl .woocommerce .tu-woocommerc-checkoutform .col2-set .col-1,
+.rtl .woocommerce-page .tu-woocommerc-checkoutform .col2-set .col-1 {
+  float: right;
+}
+
+.woocommerce-input-wrapper:not(.tb-select)>.select2:before {
+  right: auto;
+  left: 20px;
+}
+
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td {
+  text-align: right;
+}
+
+.woocommerce-checkout-payment .woocommerce-terms-and-conditions-wrapper {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+
+#add_payment_method #payment ul.payment_methods li .stripe-visa-brand,
+.rtl.woocommerce-checkout #payment ul.payment_methods li i {
+  right: auto;
+  left: 10px;
+}
+
+.woocommerce-checkout #payment .wc_payment_method div.payment_box p.form-row input {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* responsive header */
+.tu-menu {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tu-dropdownarrow {
+  right: auto;
+  left: 20px;
+}
+
+.tu-dropdownarrow i::before {
+  content: "\e92f";
+}
+
+.tu-avatar-name {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.tu-dbmenu {
+  right: -41px;
+  left: auto;
+  border-radius: 0 10px 10px 0;
+}
+
+.tu-sucesstories_comma{
+  left: 10px;
+  right: auto;
+}
+.tu-sliderarrow .splide__arrow--prev::before {
+  content: "\e930";
+}
+.tu-sliderarrow .splide__arrow--next::before {
+  content: "\e92f";
+}
+
+@media (max-width:1199px) {
+  .tu-asidedetail {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width:1199px) {
+  .sub-menu-holder>a:after {
+    margin-left: 0;
+    content: "\e92f";
+    margin-right: auto;
+  }
+
+  .tu-navbarbtn {
+    margin: 0;
+  }
+
+  .tu-themenav .menu-item-has-children .sub-menu .sub-menu,
+  .tu-themenav .page_item_has_children .children .children {
+    left: 0;
+  }
+}

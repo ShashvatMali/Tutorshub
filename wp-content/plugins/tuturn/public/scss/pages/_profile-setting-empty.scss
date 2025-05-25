@@ -1,0 +1,148 @@
+.tu-accordioneduvtwo{
+    width: 100%;
+    .tu-edusortable{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            list-style-type: none;
+        }
+        & > .tu-accordion-item:last-child .tu-accodion-holder:last-child{
+            padding-bottom: 0;
+        }
+    }
+    .tu-accodion-holder{
+        display: flex;
+        align-items: center;
+    }
+    .tu-accodion-title{
+        display: flex;
+        align-items: center;
+        h4,
+        h5{
+            margin: 0;
+        }
+    }
+    .tu-icon-holder{
+        margin-left: 16px;
+        & a > i{
+            font-size: 20px;
+        }
+        .tu-editclr{
+            color: $light;
+        }
+    }
+    .tu-listinginfo_price{
+        span{
+            font: 500 rem(14)/em(24,14) $heading_font_family;
+        }
+        & > h4{
+            @extend %h5;
+            font-weight: 600;
+        }
+    }
+    .tu-iccoion-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .tu-listinginfo_price{
+            gap: 10px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            span{
+                color: $light;
+                font-weight: 500;
+            }
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+    .tu-expinfo{
+        padding: 15px 29px;
+        border-radius: $radius;
+        background: $lightest;
+        border: 1px solid $border-color;
+    }
+    .tu-accodion-title{
+        h4{
+            @extend %h4;
+            font-weight: 600;
+        }
+    }
+    .tu-edubodymain{margin: 0;}
+    .tu-accordioneduc{
+        margin: 0;
+        padding: 0 30px;
+        .tu-accodion-holder{
+            padding: 30px 0;
+            position: relative;
+            + .tu-accodion-holder{
+                padding: 30px 0;
+            }
+            &:last-child{
+                padding-bottom: 15px;
+            }
+            + .tu-accodion-holder::after {
+                position: absolute;
+                content: "";
+                height: 1px;
+                border: none;
+                background-image: linear-gradient(90deg, $lighter, $lighter 61%, transparent 61%, transparent 100%);
+                background-size: 15px 1px;
+                top: 0;
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+    .tu-accordion-item{
+        + .tu-accordion-item{
+            margin-top: 15px;
+        }
+    }
+}
+.tu-drop-img{
+    width: 6px;
+    height: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.tu-accodion-listing{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li{
+        @extend %h6;
+        font-weight: 400;
+        list-style-type: none;
+    }
+    li:not(:last-child):after{
+        content: ",";
+        font-size: 20px;
+        margin-left: -3px;
+        line-height: 20px;
+        margin-right: 5px;
+    }    
+}
+.tu-icocodion-img{
+    width: 100%;
+    border-radius: $radius;
+    margin: 0 20px 0 0;
+    img{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        border-radius: $radius;
+    }
+}
+.tu-img-area{
+    flex: none;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}

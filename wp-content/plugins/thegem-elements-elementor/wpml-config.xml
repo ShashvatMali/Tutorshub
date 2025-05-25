@@ -1,0 +1,795 @@
+<wpml-config>
+<admin-texts>
+	<key name="thegem_gdpr_settings">
+		<key name="privacy_policy_link_text" />
+		<key name="cookies_policy_link_text" />
+		<key name="modal_title" />
+		<key name="excerpt_text" />
+		<key name="notice_text" />
+		<key name="save_preferences_button_text" />
+		<key name="consents">
+			<key name="privacy-policy">
+				<key name="description" />
+			</key>
+			<key name="google-fonts">
+				<key name="description" />
+			</key>
+			<key name="google-maps">
+				<key name="description" />
+			</key>
+			<key name="tracking">
+				<key name="description" />
+			</key>
+			<key name="youtube">
+				<key name="description" />
+			</key>
+			<key name="vimeo">
+				<key name="description" />
+			</key>
+			<key name="required">
+				<key name="description" />
+			</key>
+		</key>
+	</key>
+	<key name="thegem_gdpr_consent_bar">
+		<key name="text" />
+		<key name="privacy_preferences_link_text" />
+		<key name="i_agree_button_text" />
+	</key>
+	<key name="thegem_gdpr_integrations">
+		<key name="wordpress-comments">
+			<key name="checkbox_text" />
+			<key name="error_message" />
+		</key>
+	</key>
+		
+</admin-texts>
+<elementor-widgets>
+	<widget name="thegem-template-account">
+		<fields>
+			<field type="Custom Link" editor_type="LINK">custom_link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-cart-checkout-steps">
+		<fields>
+			<field type="Step 1 Text" editor_type="LINE">step_1_text</field>
+			<field type="Step 2 Text" editor_type="LINE">step_2_text</field>
+			<field type="Step 3 Text" editor_type="LINE">step_3_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-cart-table">
+		<fields>
+			<field type="Placeholder Text" editor_type="LINE">coupon_placeholder_text</field>
+			<field type="Apply Coupon Button Text" editor_type="LINE">apply_coupon_btn_text</field>
+			<field type="Update Cart Button Text" editor_type="LINE">update_cart_btn_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-checkout-coupon">
+		<fields>
+			<field type="Text" editor_type="LINE">text</field>
+			<field type="Link Text" editor_type="LINE">link_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-checkout-login">
+		<fields>
+			<field type="Text" editor_type="LINE">text</field>
+			<field type="Link Text" editor_type="LINE">link_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-countdown">
+		<fields>
+			<field type="Days Label" editor_type="LINE">content_labels_days_label</field>
+			<field type="Hours Label" editor_type="LINE">content_labels_hours_label</field>
+			<field type="Minutes Label" editor_type="LINE">content_labels_minutes_label</field>
+			<field type="Seconds Label" editor_type="LINE">content_labels_seconds_label</field>
+			<field type="Link" editor_type="LINK">content_link_url>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-infobox">
+		<fields>
+			<field type="Title Text" editor_type="LINE">content_textbox_title</field>
+			<field type="Subtitle Text" editor_type="LINE">content_textbox_subtitle</field>
+			<field type="Icon Link" editor_type="LINK">content_textbox_icon_image_link>url</field>
+			<field type="Content Link" editor_type="LINK">content_textbox_link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-logo">
+		<fields>
+			<field type="Custom Link" editor_type="LINK">custom_link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-loop-featured-media">
+		<fields>
+			<field type="Custom Link" editor_type="LINK">link_custom>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-loop-product-add-to-cart">
+		<fields>
+			<field type="Button Text" editor_type="LINE">cart_button_text</field>
+			<field type="Select Options Text" editor_type="LINE">select_options_button_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-portfolio-featured-image">
+		<fields>
+			<field type="Alt text" editor_type="LINE">alt</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-portfolio-navigation">
+		<fields>
+			<field type="Previous Label" editor_type="LINE">label_prev</field>
+			<field type="Next Label" editor_type="LINE">label_next</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-post-author">
+		<fields>
+			<field type="Label" editor_type="LINE">link_label</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-post-comments">
+		<fields>
+			<field type="Title Comments Text" editor_type="LINE">title_list_label</field>
+			<field type="Title Form Text" editor_type="LINE">title_form_label</field>
+			<field type="Label" editor_type="LINE">reply_label</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-featured-image">
+		<fields>
+			<field type="Alt text" editor_type="LINE">alt</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-post-info">
+		<fields>
+			<field type="List Delimiter" editor_type="LINE">terms_taxonomy_delimiter</field>
+		</fields>
+		<fields-in-item items_of="info_content">
+			<field type="Post Meta: Author Label" editor_type="LINE">author_label</field>
+			<field type="Post Meta: Date Label" editor_type="LINE">date_label</field>
+			<field type="Post Meta: Time Label" editor_type="LINE">time_label</field>
+			<field type="Post Meta: Comments Label" editor_type="LINE">comments_label</field>
+			<field type="Post Meta: Likes Label" editor_type="LINE">likes_label</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-template-post-navigation">
+		<fields>
+			<field type="Previous Label" editor_type="LINE">label_prev</field>
+			<field type="Next Label" editor_type="LINE">label_next</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-post-tags">
+		<fields>
+			<field type="Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-post-title">
+		<fields>
+			<field type="Custom Link" editor_type="LINK">link_custom>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-add-to-wishlist">
+		<fields>
+			<field type="Add to wishlist Text" editor_type="LINE">text_custom</field>
+			<field type="Remove from Wishlist Text" editor_type="LINE">text_remove</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-additional-info">
+		<fields>
+			<field type="Additional Info Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-categories">
+		<fields>
+			<field type="Categories Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-extra-description">
+		<fields>
+			<field type="Extra Description Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-gallery">
+		<fields>
+			<field type="Single Gaps" editor_type="LINE">single_gaps</field>
+			<field type="Grid Gaps" editor_type="LINE">grid_gaps</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-navigation">
+		<fields>
+			<field type="Custom Url" editor_type="LINE">back_to_shop_link_custom</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-sharing">
+		<fields>
+			<field type="Share Icons Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-size-guide">
+		<fields>
+			<field type="Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-sku">
+		<fields>
+			<field type="SKU Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-tabs">
+		<fields>
+			<field type="Description Title" editor_type="LINE">description_title</field>
+			<field type="Additional Info Title" editor_type="LINE">additional_title</field>
+			<field type="Reviews Title" editor_type="LINE">reviews_title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-product-tags">
+		<fields>
+			<field type="Tags Title" editor_type="LINE">title</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-search-form">
+		<fields>
+			<field type="Placeholder Text" editor_type="LINE">placeholder_text</field>
+			<field type="Product Categories Placeholder Text" editor_type="LINE">product_categories_placeholder_text</field>
+			<field type="Products Results Title" editor_type="LINE">products_result_title</field>
+			<field type="Posts Results Title" editor_type="LINE">posts_result_title</field>
+			<field type="Pages Results Title" editor_type="LINE">pages_result_title</field>
+			<field type="Portfolio Results Title" editor_type="LINE">portfolio_result_title</field>
+			<field type="View Results Button Text" editor_type="LINE">view_results_button_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-template-search">
+		<fields>
+			<field type="Placeholder Text" editor_type="LINE">placeholder_text</field>
+			<field type="Layout Fullscreen Placeholder Text" editor_type="LINE">layout_fullscreen_placeholder_text</field>
+			<field type="Posts Results Title" editor_type="LINE">posts_result_title</field>
+			<field type="Pages Results Title" editor_type="LINE">pages_result_title</field>
+			<field type="Portfolio Results Title" editor_type="LINE">portfolio_result_title</field>
+			<field type="View Results Button Text" editor_type="LINE">view_results_button_text</field>
+			<field type="Popular Searches Title" editor_type="LINE">popular_title</field>
+		</fields>
+		<fields-in-item items_of="select_terms_data">
+			<field type="Search Icon: Term" editor_type="LINE">title</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-template-signin">
+		<fields>
+			<field type="SignIn Link Type" editor_type="LINK">signin_link_custom>url</field>
+			<field type="SignIn Text" editor_type="LINE">signin_text</field>
+			<field type="SignOut Link Type" editor_type="LINK">signout_link_custom>url</field>
+			<field type="SignOut Text" editor_type="LINE">signout_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-accordion">
+		<fields-in-item items_of="tabs">
+			<field type="Accordion: Title" editor_type="LINE">title</field>
+			<field type="Accordion: Section ID" editor_type="LINE">section_id</field>
+			<field type="Accordion: Content Editor" editor_type="VISUAL">editor</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-animated-heading">
+		<fields>
+			<field type="Link" editor_type="LINK">link>url</field>
+			<field type="Label Text" editor_type="AREA">heading_label_text</field>
+			<field type="Animation Timing Function" editor_type="LINE">heading_animation_timing_function</field>
+		</fields>
+		<fields-in-item items_of="text_content">
+			<field type="Animated Heading: Text" editor_type="AREA">heading_text</field>
+			<field type="Animated Heading: Rotating text 1" editor_type="LINE">words_animation1</field>
+			<field type="Animated Heading: Rotating text 2" editor_type="LINE">words_animation2</field>
+			<field type="Animated Heading: Rotating text 3" editor_type="LINE">words_animation3</field>
+			<field type="Animated Heading: Rotating text 4" editor_type="LINE">words_animation4</field>
+			<field type="Animated Heading: Rotating text 5" editor_type="LINE">words_animation5</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-extended-blog-grid">
+		<fields>
+			<field type="Grid ID" editor_type="LINE">portfolio_uid</field>
+			<field type="Button Text" editor_type="LINE">blog_readmore_button_text</field>
+			<field type="Custom Link" editor_type="LINK">readmore_button_custom_link>url</field>
+			<field type="Button ID" editor_type="LINE">readmore_button_id</field>
+			<field type="Show All Text" editor_type="LINE">filters_text_labels_all_text</field>
+			<field type="Clear Filters Text" editor_type="LINE">filters_text_labels_clear_text</field>
+			<field type="Search Text" editor_type="LINE">filters_text_labels_search_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filter_buttons_hidden_show_text</field>
+			<field type="Sidebar Title" editor_type="LINE">filter_buttons_hidden_sidebar_title</field>
+			<field type="Filter By Text" editor_type="LINE">filter_buttons_hidden_filter_by_text</field>
+			<field type="No Items Found Button Text" editor_type="LINE">not_found_text</field>
+			<field type="Button Text" editor_type="LINE">more_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="By text" editor_type="LINE">by_text</field>
+			<field type="Show All Button Text" editor_type="LINE">show_all_button_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filters_mobile_show_button_text</field>
+			<field type="More Text" editor_type="LINE">filters_more_button_text</field>
+			<field type="Date Text" editor_type="LINE">sorting_date_text</field>
+			<field type="Name Text" editor_type="LINE">sorting_name_text</field>
+			<field type="Desc Text" editor_type="LINE">sorting_desc_text</field>
+			<field type="Asc Text" editor_type="LINE">sorting_asc_text</field>
+			<field type="Default sorting Text" editor_type="LINE">sorting_extended_text</field>
+			<field type="Sort by title (A-Z) Text" editor_type="LINE">sorting_extended_dropdown_title_text</field>
+			<field type="Sort by title (Z-A) Text" editor_type="LINE">sorting_extended_dropdown_title_desc_text</field>
+			<field type="Sort by latest Text" editor_type="LINE">sorting_extended_dropdown_latest_text</field>
+			<field type="Sort by oldest Text" editor_type="LINE">sorting_extended_dropdown_oldest_text</field>
+			<field type="Separator" editor_type="LINE">details_separator</field>
+		</fields>
+		<fields-in-item items_of="repeater_details">
+			<field type="Posts Extended Grid Details: Title" editor_type="LINE">attribute_title</field>
+			<field type="Posts Extended Grid Details: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Posts Extended Grid Details: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Posts Extended Grid Details: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_attributes">
+			<field type="Posts Extended Grid Attributes: Title" editor_type="LINE">attribute_title</field>
+			<field type="Posts Extended Grid Attributes: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Posts Extended Grid Attributes: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Posts Extended Grid Attributes: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_sort">
+			<field type="Posts Extended Grid Sort: Title" editor_type="LINE">title</field>
+			<field type="Posts Extended Grid Sort: Specify Field`s Name" editor_type="LINE">manual_key_field</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-posts-carousel">
+		<fields>
+			<field type="Button Text" editor_type="LINE">blog_readmore_button_text</field>
+			<field type="Custom Link" editor_type="LINK">readmore_button_custom_link>url</field>
+			<field type="Button ID" editor_type="LINE">readmore_button_id</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="By text" editor_type="LINE">by_text</field>
+			<field type="Separator" editor_type="LINE">details_separator</field>
+		</fields>
+		<fields-in-item items_of="repeater_details">
+			<field type="Posts Carousel: Title" editor_type="LINE">attribute_title</field>
+			<field type="Posts Carousel: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Posts Carousel: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Posts Carousel: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-featured-posts-slider">
+		<fields>
+			<field type="Button Text" editor_type="LINE">more_button_text</field>
+			<field type="Custom Link" editor_type="LINK">more_button_custom_link>url</field>
+			<field type="Button ID" editor_type="LINE">more_button_id</field>
+			<field type="Video Link" editor_type="LINE">image_overlay_video_link</field>
+			<field type="By text" editor_type="LINE">by_text</field>
+			<field type="Separator" editor_type="LINE">details_separator</field>
+		</fields>
+		<fields-in-item items_of="repeater_details">
+			<field type="Featured Posts Slider: Title" editor_type="LINE">attribute_title</field>
+			<field type="Featured Posts Slider: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Featured Posts Slider: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Featured Posts Slider: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-blog-grid">
+		<fields>
+			<field type="Read More Button Text" editor_type="LINE">readmore_button_text</field>
+			<field type="Load More Button Text" editor_type="LINE">loadmore_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="Caption Author By Text" editor_type="LINE">caption_author_by_text</field>
+			<field type="Sticky Post Caption Author By Text" editor_type="LINE">sticky_post_caption_author_by_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-bloglist">
+		<fields>
+			<field type="Read More Button Text" editor_type="LINE">readmore_button_text</field>
+			<field type="Load More Button Text" editor_type="LINE">loadmore_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="In Text" editor_type="LINE">caption_categories_in_text</field>
+			<field type="By Text" editor_type="LINE">caption_author_by_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-blogslider">
+		<fields>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="By Text" editor_type="LINE">caption_author_by_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-blogtimeline">
+		<fields>
+			<field type="Read More Button Text" editor_type="LINE">readmore_button_text</field>
+			<field type="Load More Button Text" editor_type="LINE">loadmore_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="By Text" editor_type="LINE">caption_author_by_text</field>
+			<field type="By Text" editor_type="LINE">sticky_post_caption_author_by_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-styledbutton">
+		<fields>
+			<field type="Text" editor_type="LINE">button_text</field>
+			<field type="Link" editor_type="LINK">button_link>url</field>
+			<field type="Animation Timing Function" editor_type="LINE">effects_enabled_timing_function</field>
+			<field type="Button ID" editor_type="LINE">button_id</field>
+			<field type="Button Class" editor_type="LINE">button_class</field>
+		</fields>
+	</widget>
+	<widget name="thegem-cta">
+		<fields>
+			<field type="Title Text" editor_type="LINE">title</field>
+			<field type="Content Text" editor_type="VISUAL">text</field>
+			<field type="Link" editor_type="LINK">icon_image_link>url</field>
+			<field type="Button 1 Text" editor_type="LINE">button_1_text</field>
+			<field type="Button 1 Link" editor_type="LINK">button_1_link>url</field>
+			<field type="Button 2 Text" editor_type="LINE">button_2_text</field>
+			<field type="Button 2 Link" editor_type="LINK">button_2_link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-clients">
+		<fields-in-item items_of="clients_logo_list">
+			<field type="Clients: Link" editor_type="LINK">clients_link>url</field>
+			<field type="Clients: Brand Name" editor_type="LINE">clients_name</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-countdown">
+		<fields>
+			<field type="Days Label" editor_type="LINE">content_labels_days_label</field>
+			<field type="Days Label" editor_type="LINE">content_labels_days_label_days_only</field>
+			<field type="Hours Label" editor_type="LINE">content_labels_hours_label</field>
+			<field type="Minutes Label" editor_type="LINE">content_labels_minutes_label</field>
+			<field type="Seconds Label" editor_type="LINE">content_labels_seconds_label</field>
+			<field type="Link" editor_type="LINK">content_link_url>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-counter">
+		<fields>
+			<field type="Numbers Format" editor_type="LINE">numbers_format</field>
+			<field type="Number Suffix" editor_type="LINE">counter_number_suffix</field>
+			<field type="Description" editor_type="AREA">counter_description</field>
+			<field type="Link" editor_type="LINK">counter_link>url</field>
+			<field type="Video Link" editor_type="LINE">counter_team_person_bgcolor_video_link</field>
+			<field type="Video Link" editor_type="LINE">counter_team_person_bgcolor_hv_video_link</field>
+		</fields>
+	</widget>
+	<widget name="thegem-custom-menu">
+		<fields>
+			<field type="Heading Text" editor_type="AREA">heading_text</field>
+			<field type="Link" editor_type="LINK">heading_link>url</field>
+			<field type="Label Text" editor_type="AREA">heading_label_text</field>
+		</fields>
+		<fields-in-item items_of="menu_custom">
+			<field type="Custom Menu: Title" editor_type="AREA">item_title</field>
+			<field type="Custom Menu: Link" editor_type="LINK">item_link>url</field>
+			<field type="Custom Menu: Label Text" editor_type="AREA">item_label_text</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-extended-filter">
+		<fields>
+			<field type="Grid ID" editor_type="LINE">grid_id</field>
+			<field type="Button Text" editor_type="LINE">apply_button_text</field>
+			<field type="Button ID" editor_type="LINE">apply_button_id</field>
+			<field type="Button Class" editor_type="LINE">apply_button_class</field>
+			<field type="Grid URL (optional)" editor_type="LINK">grid_url>url</field>
+			<field type="Show All Text" editor_type="LINE">filters_text_labels_all_text</field>
+			<field type="Search Text" editor_type="LINE">filters_text_labels_search_text</field>
+			<field type="Search Title" editor_type="LINE">filters_text_labels_search_title</field>
+			<field type="Show Filters Text" editor_type="LINE">filter_buttons_hidden_show_text</field>
+			<field type="Sidebar Title" editor_type="LINE">filter_buttons_hidden_sidebar_title</field>
+			<field type="Filter By Text" editor_type="LINE">filter_buttons_hidden_filter_by_text</field>
+		</fields>
+		<fields-in-item items_of="repeater_attributes">
+			<field type="Grid Filter: Title" editor_type="LINE">attribute_title</field>
+			<field type="Grid Filter: Specify Field`s Name" editor_type="LINE">manual_key_field</field>
+			<field type="Grid Filter: On Sale Text" editor_type="LINE">filter_by_status_sale_text</field>
+			<field type="Grid Filter: In Stock Text" editor_type="LINE">filter_by_status_stock_text</field>
+			<field type="Grid Filter: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Grid Filter: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Grid Filter: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-extended-products-grid">
+		<fields>
+			<field type="Grid ID" editor_type="LINE">portfolio_uid</field>
+			<field type="Title Text" editor_type="LINE">cross_sell_title_text</field>
+			<field type="Cart Button Text" editor_type="LINE">cart_button_text</field>
+			<field type="Select Options Text" editor_type="LINE">select_options_button_text</field>
+			<field type="More Button Text" editor_type="LINE">more_button_text</field>
+			<field type="New Label Text" editor_type="LINE">new_label_text</field>
+			<field type="Prefix" editor_type="LINE">sale_label_prefix</field>
+			<field type="Suffix" editor_type="LINE">sale_label_suffix</field>
+			<field type="Sale Label Text" editor_type="LINE">sale_label_text</field>
+			<field type="Out Label Text" editor_type="LINE">out_label_text</field>
+			<field type="Filter By Categories Title" editor_type="LINE">filter_by_categories_title</field>
+			<field type="Price" editor_type="LINE">filter_by_price_title</field>
+			<field type="Filter by Status Title" editor_type="LINE">filter_by_status_title</field>
+			<field type="Show All Text" editor_type="LINE">filters_text_labels_all_text</field>
+			<field type="Clear Filters Text" editor_type="LINE">filters_text_labels_clear_text</field>
+			<field type="Search by Product Text" editor_type="LINE">filters_text_labels_search_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filter_buttons_hidden_show_text</field>
+			<field type="Sidebar Title" editor_type="LINE">filter_buttons_hidden_sidebar_title</field>
+			<field type="Filter By Text" editor_type="LINE">filter_buttons_hidden_filter_by_text</field>
+			<field type="In Stock Text" editor_type="LINE">filter_by_status_stock_text</field>
+			<field type="On Sale Text" editor_type="LINE">filter_by_status_sale_text</field>
+			<field type="Title" editor_type="LINE">filters_tabs_title_text</field>
+			<field type="Added to Cart Text" editor_type="LINE">added_cart_text</field>
+			<field type="Added to Wishlist Text" editor_type="LINE">added_wishlist_text</field>
+			<field type="Removed from Wishlist Text" editor_type="LINE">removed_wishlist_text</field>
+			<field type="View Cart Button Text" editor_type="LINE">view_cart_button_text</field>
+			<field type="Checkout Button Text" editor_type="LINE">checkout_button_text</field>
+			<field type="View Wishlist Button Text" editor_type="LINE">view_wishlist_button_text</field>
+			<field type="No Products Found Button Text" editor_type="LINE">not_found_text</field>
+			<field type="Quick View Text" editor_type="LINE">quick_view_text</field>
+			<field type="Default sorting Text" editor_type="LINE">sorting_text</field>
+			<field type="Sort by latest Text" editor_type="LINE">sorting_dropdown_latest_text</field>
+			<field type="Sort by popularity Text" editor_type="LINE">sorting_dropdown_popularity_text</field>
+			<field type="Sort by average rating Text" editor_type="LINE">sorting_dropdown_rating_text</field>
+			<field type="Sort by price: low to high Text" editor_type="LINE">sorting_dropdown_price_low_high_text</field>
+			<field type="Sort by price: high to low Text" editor_type="LINE">sorting_dropdown_price_high_low_text</field>
+		</fields>
+		<fields-in-item items_of="repeater_swatches">
+			<field type="Products Grid Swatches: Title" editor_type="LINE">attribute_title</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_sort">
+			<field type="Products Grid Sort: Title" editor_type="LINE">title</field>
+			<field type="Products Grid Sort: Specify Field`s Name" editor_type="LINE">manual_key_field</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_attributes">
+			<field type="Products Grid Attributes: Title" editor_type="LINE">attribute_title</field>
+		</fields-in-item>
+		<fields-in-item items_of="filters_tabs_tabs">
+			<field type="Products Grid Filters: Tabs Title" editor_type="LINE">filters_tabs_tab_title</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-extended-sorting">
+		<fields>
+			<field type="Grid ID" editor_type="LINE">grid_id</field>
+			<field type="Default sorting Text" editor_type="LINE">sorting_default_text</field>
+		</fields>
+		<fields-in-item items_of="repeater_sort">
+			<field type="Grid Sorting: Title" editor_type="LINE">title</field>
+			<field type="Grid Sorting: Specify Field`s Name" editor_type="LINE">manual_key_field</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-gallery-grid">
+		<fields>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="Show All Button Text" editor_type="LINE">show_all_button_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filters_mobile_show_button_text</field>
+			<field type="More Text" editor_type="LINE">filters_more_button_text</field>
+		</fields>
+		<fields-in-item items_of="galleries">
+			<field type="Gallery Grid: Title" editor_type="LINE">gallery_title</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-gallery-slider">
+		<fields-in-item items_of="slides_list">
+			<field type="Gallery Slider: Title" editor_type="LINE">slide_title</field>
+			<field type="Gallery Slider: Subtitle" editor_type="AREA">slide_subtitle</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-icon">
+		<fields>
+			<field type="Link" editor_type="LINK">link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-styledimage">
+		<fields>
+			<field type="Link" editor_type="LINK">link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-infobox">
+		<fields>
+			<field type="Title Text" editor_type="LINE">content_textbox_title</field>
+			<field type="Subtitle Text" editor_type="LINE">content_textbox_subtitle</field>
+			<field type="Icon Link" editor_type="LINK">content_textbox_icon_image_link>url</field>
+			<field type="Content Link" editor_type="LINK">content_textbox_link>url</field>
+		</fields>
+	</widget>
+	<widget name="thegem-mailchimp">
+		<fields>
+			<field type="Text" editor_type="LINE">submit_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-portfolio">
+		<fields>
+			<field type="Grid ID" editor_type="LINE">portfolio_uid</field>
+			<field type="Button Text" editor_type="LINE">blog_readmore_button_text</field>
+			<field type="Custom Link" editor_type="LINK">readmore_button_custom_link>url</field>
+			<field type="Button ID" editor_type="LINE">readmore_button_id</field>
+			<field type="Show All Text" editor_type="LINE">filters_text_labels_all_text</field>
+			<field type="Clear Filters Text" editor_type="LINE">filters_text_labels_clear_text</field>
+			<field type="Search Text" editor_type="LINE">filters_text_labels_search_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filter_buttons_hidden_show_text</field>
+			<field type="Sidebar Title" editor_type="LINE">filter_buttons_hidden_sidebar_title</field>
+			<field type="Filter By Text" editor_type="LINE">filter_buttons_hidden_filter_by_text</field>
+			<field type="No Items Found Button Text" editor_type="LINE">not_found_text</field>
+			<field type="Button Text" editor_type="LINE">more_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="in Text" editor_type="LINE">category_in_text</field>
+			<field type="in Text" editor_type="LINE">category_in_text_page</field>
+			<field type="Show All Button Text" editor_type="LINE">show_all_button_text</field>
+			<field type="Show Filters Text" editor_type="LINE">filters_mobile_show_button_text</field>
+			<field type="More Text" editor_type="LINE">filters_more_button_text</field>
+			<field type="Date Text" editor_type="LINE">sorting_date_text</field>
+			<field type="Name Text" editor_type="LINE">sorting_name_text</field>
+			<field type="Desc Text" editor_type="LINE">sorting_desc_text</field>
+			<field type="Asc Text" editor_type="LINE">sorting_asc_text</field>
+			<field type="Default sorting Text" editor_type="LINE">sorting_extended_text</field>
+			<field type="Sort by title (A-Z) Text" editor_type="LINE">sorting_extended_dropdown_title_text</field>
+			<field type="Sort by title (Z-A) Text" editor_type="LINE">sorting_extended_dropdown_title_desc_text</field>
+			<field type="Sort by latest Text" editor_type="LINE">sorting_extended_dropdown_latest_text</field>
+			<field type="Sort by oldest Text" editor_type="LINE">sorting_extended_dropdown_oldest_text</field>
+			<field type="Separator" editor_type="LINE">details_separator</field>
+		</fields>
+		<fields-in-item items_of="repeater_details">
+			<field type="Portfolio Grid Details: Title" editor_type="LINE">attribute_title</field>
+			<field type="Portfolio Grid Details: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Portfolio Grid Details: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Portfolio Grid Details: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_attributes">
+			<field type="Portfolio Grid Attributes: Title" editor_type="LINE">attribute_title</field>
+			<field type="Portfolio Grid Attributes: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Portfolio Grid Attributes: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Portfolio Grid Attributes: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+		<fields-in-item items_of="repeater_sort">
+			<field type="Portfolio Grid Sort: Title" editor_type="LINE">title</field>
+			<field type="Portfolio Grid Sort: Specify Field`s Name" editor_type="LINE">manual_key_field</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-portfolio-carousel">
+		<fields>
+			<field type="Button Text" editor_type="LINE">blog_readmore_button_text</field>
+			<field type="Custom Link" editor_type="LINK">readmore_button_custom_link>url</field>
+			<field type="Button ID" editor_type="LINE">readmore_button_id</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="in Text" editor_type="LINE">category_in_text</field>
+			<field type="Separator" editor_type="LINE">details_separator</field>
+		</fields>
+		<fields-in-item items_of="repeater_details">
+			<field type="Portfolio Carousel: Title" editor_type="LINE">attribute_title</field>
+			<field type="Portfolio Carousel: Custom Locale" editor_type="LINE">attribute_price_format_locale</field>
+			<field type="Portfolio Carousel: Prefix" editor_type="LINE">attribute_price_format_prefix</field>
+			<field type="Portfolio Carousel: Suffix" editor_type="LINE">attribute_price_format_suffix</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-portfolio-list">
+		<fields>
+			<field type="Button Text" editor_type="LINE">more_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="in Text" editor_type="LINE">category_in_text</field>
+			<field type="in Text" editor_type="LINE">category_in_text_page</field>
+			<field type="Button Text" editor_type="LINE">details_button_text</field>
+			<field type="Show All Button Text" editor_type="LINE">show_all_button_text</field>
+			<field type="Date Text" editor_type="LINE">sorting_date_text</field>
+			<field type="Name Text" editor_type="LINE">sorting_name_text</field>
+			<field type="Desc Text" editor_type="LINE">sorting_desc_text</field>
+			<field type="Asc Text" editor_type="LINE">sorting_asc_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-portfolio-slider">
+		<fields>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="in Text" editor_type="LINE">category_in_text</field>
+			<field type="in Text" editor_type="LINE">category_in_text_page</field>
+		</fields>
+	</widget>
+	<widget name="thegem-pricing-table">
+		<fields>
+			<field type="Title" editor_type="LINE">content_header_title</field>
+			<field type="Subtitle" editor_type="AREA">content_header_subtitle</field>
+			<field type="Price" editor_type="LINE">content_pricing_price</field>
+			<field type="Period" editor_type="LINE">content_pricing_period</field>
+			<field type="Button Text" editor_type="LINE">content_footer_button_text</field>
+			<field type="Link" editor_type="LINK">content_footer_button_link>url</field>
+			<field type="Text" editor_type="LINE">content_label_text</field>
+		</fields>
+		<fields-in-item items_of="features_list">
+			<field type="Pricing Table: Text" editor_type="LINE">feature_text</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-extended-products-carousel">
+		<fields>
+			<field type="Title Text" editor_type="LINE">cross_sell_title_text</field>
+			<field type="Button Text" editor_type="LINE">cart_button_text</field>
+			<field type="Select Options Text" editor_type="LINE">select_options_button_text</field>
+			<field type="Label Text" editor_type="LINE">new_label_text</field>
+			<field type="Prefix" editor_type="LINE">sale_label_prefix</field>
+			<field type="Suffix" editor_type="LINE">sale_label_suffix</field>
+			<field type="Label Text" editor_type="LINE">sale_label_text</field>
+			<field type="Label Text" editor_type="LINE">out_label_text</field>
+			<field type="Title" editor_type="LINE">filters_tabs_title_text</field>
+			<field type="Added to Cart Text" editor_type="LINE">added_cart_text</field>
+			<field type="Added to Wishlist Text" editor_type="LINE">added_wishlist_text</field>
+			<field type="Removed from Wishlist Text" editor_type="LINE">removed_wishlist_text</field>
+			<field type="View Cart Button Text" editor_type="LINE">view_cart_button_text</field>
+			<field type="Checkout Button Text" editor_type="LINE">checkout_button_text</field>
+			<field type="View Wishlist Button Text" editor_type="LINE">view_wishlist_button_text</field>
+			<field type="No Products Found Button Text" editor_type="LINE">not_found_text</field>
+			<field type="Quick View Text" editor_type="LINE">quick_view_text</field>
+		</fields>
+		<fields-in-item items_of="filters_tabs_tabs">
+			<field type="Products Carousel: Tabs Title" editor_type="LINE">filters_tabs_tab_title</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-products-categories">
+		<fields>
+			<field type="Product Text" editor_type="LINE">product_singular_text</field>
+			<field type="Products Text" editor_type="LINE">product_plural_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-products-grid">
+		<fields>
+			<field type="New Label Text" editor_type="LINE">new_label_text</field>
+			<field type="Sale Label Text" editor_type="LINE">sale_label_text</field>
+			<field type="Out Label Text" editor_type="LINE">out_label_text</field>
+			<field type="Button Text" editor_type="LINE">more_button_text</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+			<field type="Show All Button Text" editor_type="LINE">show_all_button_text</field>
+			<field type="Date Text" editor_type="LINE">sorting_date_text</field>
+			<field type="Name Text" editor_type="LINE">sorting_name_text</field>
+			<field type="Desc Text" editor_type="LINE">sorting_desc_text</field>
+			<field type="Asc Text" editor_type="LINE">sorting_asc_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-products-slider">
+		<fields>
+			<field type="New Label Text" editor_type="LINE">products_text_new_label</field>
+			<field type="Sale Label Text" editor_type="LINE">products_text_sale_label</field>
+			<field type="Out Label Text" editor_type="LINE">products_text_out_label</field>
+			<field type="Video Link" editor_type="LINE">image_hover_overlay_video_link</field>
+		</fields>
+	</widget>
+	<widget name="thegem-diagram">
+		<fields>
+			<field type="Title" editor_type="LINE">summary_title</field>
+			<field type="Description" editor_type="AREA">summary_description</field>
+		</fields>
+		<fields-in-item items_of="content_items_items">
+			<field type="Progress Bars: Skill" editor_type="LINE">content_items_skill</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-progressdonut">
+		<fields>
+			<field type="Label" editor_type="LINE">label</field>
+			<field type="Unit" editor_type="LINE">units</field>
+		</fields>
+	</widget>
+	<widget name="thegem-projectinfo">
+		<fields-in-item items_of="pi_list_items">
+			<field type="Project Info: Title Text" editor_type="LINE">pi_item_title</field>
+			<field type="Project Info: Content Text" editor_type="VISUAL">pi_item_description</field>
+			<field type="Project Info: Link" editor_type="LINK">pi_item_link>url</field>
+			<field type="Project Info: Video Link" editor_type="LINE">content_icon_bg_color_video_link</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-quickfinders">
+		<fields-in-item items_of="qf_list">
+			<field type="Quickfinders: Title Text" editor_type="LINE">qf_item_title</field>
+			<field type="Quickfinders: Content Text" editor_type="VISUAL">qf_item_description</field>
+			<field type="Quickfinders: Link" editor_type="LINK">qf_item_link>url</field>
+			<field type="Quickfinders: Icon Link" editor_type="LINK">qf_item_icon_image_link>url</field>
+			<field type="Quickfinders: Button Text" editor_type="LINE">qf_item_button_text</field>
+			<field type="Quickfinders: Button Link" editor_type="LINK">qf_item_button_link>url</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-quoted-text">
+		<fields>
+			<field type="Quoted text" editor_type="VISUAL">quoted_text</field>
+			<field type="Video Link" editor_type="LINE">container_bgcolor_video_link</field>
+		</fields>
+	</widget>
+	<widget name="thegem-searchbar">
+		<fields>
+			<field type="Label Text" editor_type="LINE">label_text</field>
+			<field type="Placeholder Text" editor_type="LINE">placeholder_text</field>
+			<field type="Text" editor_type="LINE">button_text</field>
+		</fields>
+	</widget>
+	<widget name="thegem-tabs">
+		<fields-in-item items_of="tabs">
+			<field type="Tabs and Tours: Title" editor_type="LINE">title</field>
+			<field type="Tabs and Tours: Subtitle" editor_type="AREA">subtitle</field>
+			<field type="Tabs and Tours: Section ID" editor_type="LINE">section_id</field>
+			<field type="Tabs and Tours: Content Editor" editor_type="VISUAL">editor</field>
+		</fields-in-item>
+	</widget>
+	<widget name="thegem-styled-textbox">
+		<fields>
+			<field type="Title Text" editor_type="LINE">content_textbox_title</field>
+			<field type="Content Text" editor_type="VISUAL">content_textbox_text</field>
+			<field type="Icon Link" editor_type="LINK">content_textbox_icon_image_link>url</field>
+			<field type="Button Text" editor_type="LINE">content_textbox_button_text>url</field>
+			<field type="Button Link" editor_type="LINK">content_textbox_button_link>url</field>
+			<field type="Content Link" editor_type="LINK">content_textbox_link</field>
+		</fields>
+	</widget>
+</elementor-widgets>
+</wpml-config>
